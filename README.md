@@ -1,11 +1,7 @@
 # Sarang Ram M — Portfolio
 
-A GitHub Pages-ready personal portfolio website for Sarang Ram M.
+Positioning: **Social Media Marketer | Digital Marketing Executive**
 
-## Files
-- `index.html` — page structure/content
-- `style.css` — visual design/responsive layout
-- `script.js` — smooth scrolling
+Core areas: Social Media, Content Strategy, Creative Campaigns, Meta Ads, Brand Content, Reporting and Google Business Profile.
 
-## Before publishing
-Replace the visual placeholders in `index.html` with Sarang's actual project/photography images or video thumbnails. Campaign results can be added later to the selected case studies.
+Upload these files to the existing `sarangramm.github.io` repository to update the live GitHub Pages site.
