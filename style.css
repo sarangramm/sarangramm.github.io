@@ -540,6 +540,17 @@ a {
 
 }
 /* =====================================================
+   SECTION SEPARATOR
+===================================================== */
+
+.section-divider {
+    width: 92%;
+    max-width: var(--max-width);
+    height: 1px;
+    margin: 0 auto;
+    background: var(--light-grey);
+}
+/* =====================================================
    CONTACT PAGE
 ===================================================== */
 
@@ -1054,6 +1065,17 @@ a {
     .contact-link {
         font-size: 15px;
     }
+}
+/* =====================================================
+   SECTION SEPARATOR
+===================================================== */
+
+.section-divider {
+    width: 92%;
+    max-width: var(--max-width);
+    height: 1px;
+    margin: 0 auto;
+    background: var(--light-grey);
 }
 /* =====================================================
    ABOUT ME
