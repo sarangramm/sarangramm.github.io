@@ -1244,68 +1244,47 @@ a {
 ===================================================== */
 
 .services-section {
-    padding: 150px 0;
-
-    background: var(--white);
+    padding: 100px 0;
+    background: #ffffff;
 }
 
-
 .services-container {
-    width: min(90%, var(--max-width));
-
+    width: 90%;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
-
-/* =====================================================
-   SERVICES HEADER
-===================================================== */
-
 .services-label {
-    margin-bottom: 70px;
-
-    color: var(--grey);
-
-    font-family: var(--font-secondary);
-
+    margin-bottom: 45px;
     font-size: 12px;
-
-    font-weight: 500;
-
     letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #666666;
 }
-
 
 .services-header {
-    margin-bottom: 90px;
+    margin-bottom: 55px;
 }
-
 
 .services-header h2 {
     margin: 0;
-
-    color: var(--black);
-
-    font-size: clamp(55px, 7vw, 90px);
-
+    font-size: clamp(50px, 6vw, 78px);
     line-height: 0.98;
-
-    letter-spacing: -4px;
-
+    letter-spacing: -3px;
     font-weight: 600;
+    color: #111111;
 }
 
 
 /* =====================================================
-   SERVICES GRID
+   GRID
 ===================================================== */
 
 .services-grid {
     display: grid;
-
     grid-template-columns: repeat(2, 1fr);
 
-    border-top: 1px solid var(--light-grey);
+    border-top: 1px solid #dddddd;
 }
 
 
@@ -1314,96 +1293,80 @@ a {
 ===================================================== */
 
 .service-item {
-    position: relative;
-
     display: grid;
 
-    grid-template-columns: 48px 1fr;
+    grid-template-columns: 42px 1fr;
 
-    gap: 24px;
+    gap: 18px;
 
-    min-height: 240px;
+    min-height: 175px;
 
-    padding: 40px 40px 40px 0;
+    padding: 28px 35px;
 
-    border-bottom: 1px solid var(--light-grey);
+    box-sizing: border-box;
 
-    transition:
-        background 0.3s ease,
-        transform 0.3s ease;
+    border-bottom: 1px solid #dddddd;
 }
 
 
 /* Vertical divider */
 
 .service-item:nth-child(odd) {
-    border-right: 1px solid var(--light-grey);
-
-    padding-right: 45px;
-}
-
-
-.service-item:nth-child(even) {
-    padding-left: 45px;
+    border-right: 1px solid #dddddd;
 }
 
 
 /* =====================================================
-   SERVICE ICON
+   ICON
 ===================================================== */
 
 .service-icon {
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
     width: 42px;
-
     height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     border-radius: 50%;
 
-    background: #f7f7f7;
-
-    flex-shrink: 0;
+    background: #f6f6f6;
 }
-
 
 .service-icon svg {
     width: 20px;
-
     height: 20px;
 
-    stroke-width: 1.8;
+    display: block;
+
+    stroke-width: 2;
 }
 
 
-/* Individual icon colours */
+/* Icon colours */
 
 .icon-social {
-    color: #6c63ff;
+    color: #6366f1;
 }
 
 .icon-content {
-    color: #e85d9e;
+    color: #ec4899;
 }
 
 .icon-video {
-    color: #ff6b35;
+    color: #f97316;
 }
 
 .icon-ads {
-    color: #2f80ed;
+    color: #2563eb;
 }
 
 .icon-strategy {
-    color: #9b51e0;
+    color: #9333ea;
 }
 
 .icon-digital {
-    color: #00a896;
+    color: #0891b2;
 }
 
 .icon-copy {
@@ -1416,56 +1379,47 @@ a {
 
 
 /* =====================================================
-   SERVICE CONTENT
+   CONTENT
 ===================================================== */
 
 .service-content {
-    padding-top: 2px;
+    padding-top: 1px;
 }
-
 
 .service-number {
     display: block;
 
-    margin-bottom: 14px;
-
-    color: var(--grey);
-
-    font-family: var(--font-secondary);
+    margin-bottom: 10px;
 
     font-size: 11px;
 
-    font-weight: 500;
-
     letter-spacing: 1.5px;
+
+    color: #777777;
 }
 
-
 .service-content h3 {
-    margin-bottom: 14px;
+    margin: 0 0 10px;
 
-    color: var(--black);
-
-    font-size: 21px;
+    font-size: 20px;
 
     line-height: 1.25;
 
     font-weight: 600;
 
-    letter-spacing: -0.5px;
+    color: #111111;
 }
 
-
 .service-content p {
-    max-width: 430px;
+    max-width: 470px;
 
-    color: var(--grey);
-
-    font-family: var(--font-secondary);
+    margin: 0;
 
     font-size: 14px;
 
-    line-height: 1.75;
+    line-height: 1.6;
+
+    color: #666666;
 }
 
 
@@ -1473,73 +1427,43 @@ a {
    HOVER
 ===================================================== */
 
-.service-item:hover {
-    background: var(--off-white);
+.service-icon {
+    transition: transform 0.25s ease;
 }
-
 
 .service-item:hover .service-icon {
     transform: scale(1.08);
 }
 
 
-.service-icon {
-    transition: transform 0.3s ease;
-}
-
-
 /* =====================================================
-   SERVICES — TABLET
+   TABLET
 ===================================================== */
 
 @media (max-width: 850px) {
 
     .services-section {
-        padding: 100px 0;
+        padding: 80px 0;
     }
-
-
-    .services-label {
-        margin-bottom: 55px;
-    }
-
-
-    .services-header {
-        margin-bottom: 65px;
-    }
-
-
-    .services-header h2 {
-        font-size: clamp(52px, 12vw, 75px);
-
-        letter-spacing: -3px;
-    }
-
 
     .services-grid {
         grid-template-columns: 1fr;
     }
 
-
-    .service-item,
-    .service-item:nth-child(odd),
-    .service-item:nth-child(even) {
-
-        padding: 32px 0;
-
+    .service-item:nth-child(odd) {
         border-right: none;
     }
 
-
     .service-item {
         min-height: auto;
+        padding: 28px 0;
     }
 
 }
 
 
 /* =====================================================
-   SERVICES — MOBILE
+   MOBILE
 ===================================================== */
 
 @media (max-width: 600px) {
@@ -1548,60 +1472,33 @@ a {
         width: 90%;
     }
 
-
-    .services-section {
-        padding: 80px 0;
-    }
-
-
     .services-header h2 {
-        font-size: 50px;
-
-        line-height: 1;
-
-        letter-spacing: -2.5px;
+        font-size: 48px;
+        letter-spacing: -2px;
     }
-
 
     .service-item {
-
-        grid-template-columns: 42px 1fr;
-
-        gap: 16px;
-
-        padding: 30px 0;
+        grid-template-columns: 40px 1fr;
+        gap: 15px;
+        padding: 25px 0;
     }
 
-
     .service-icon {
-
         width: 38px;
-
         height: 38px;
     }
 
-
     .service-icon svg {
-
         width: 18px;
-
         height: 18px;
     }
 
-
     .service-content h3 {
-
         font-size: 18px;
-
-        margin-bottom: 10px;
     }
 
-
     .service-content p {
-
         font-size: 13px;
-
-        line-height: 1.7;
     }
 
 }
