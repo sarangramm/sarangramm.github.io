@@ -1349,3 +1349,174 @@ img {
     }
 
 }
+/* =========================================
+   BRANDS I'VE WORKED WITH
+========================================= */
+
+.brands-section {
+    width: 100%;
+    padding: 110px 0 100px;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+.brands-header {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 60px 55px;
+}
+
+.brands-header .section-label {
+    margin: 0 0 18px;
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #777777;
+}
+
+.brands-header h2 {
+    margin: 0;
+    font-size: clamp(38px, 5vw, 72px);
+    line-height: 0.95;
+    font-weight: 500;
+    letter-spacing: -0.04em;
+    color: #111111;
+}
+
+
+/* SLIDER */
+
+.logo-slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    border-top: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+    padding: 35px 0;
+}
+
+
+/* LOGO TRACK */
+
+.logo-track {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    animation: logoScroll 45s linear infinite;
+}
+
+
+/* INDIVIDUAL LOGO */
+
+.brand-logo {
+    width: 220px;
+    height: 90px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 35px;
+    flex-shrink: 0;
+}
+
+
+/* LOGO IMAGE */
+
+.brand-logo img {
+    max-width: 170px;
+    max-height: 65px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+
+    display: block;
+}
+
+
+/* DIFFERENT LOGO SIZES */
+
+.brand-logo:nth-child(2) img,
+.brand-logo:nth-child(15) img {
+    max-width: 135px;
+    max-height: 65px;
+}
+
+.brand-logo:nth-child(4) img,
+.brand-logo:nth-child(17) img {
+    max-width: 150px;
+    max-height: 70px;
+}
+
+.brand-logo:nth-child(5) img,
+.brand-logo:nth-child(18) img {
+    max-width: 170px;
+}
+
+.brand-logo:nth-child(7) img,
+.brand-logo:nth-child(20) img {
+    max-width: 145px;
+    max-height: 70px;
+}
+
+
+/* CONTINUOUS ANIMATION */
+
+@keyframes logoScroll {
+
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+
+}
+
+
+/* PAUSE WHEN HOVERED */
+
+.logo-slider:hover .logo-track {
+    animation-play-state: paused;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .brands-section {
+        padding: 80px 0 70px;
+    }
+
+    .brands-header {
+        padding: 0 25px 40px;
+    }
+
+    .brands-header h2 {
+        font-size: 42px;
+    }
+
+    .logo-slider {
+        padding: 25px 0;
+    }
+
+    .logo-track {
+        animation-duration: 35s;
+    }
+
+    .brand-logo {
+        width: 160px;
+        height: 75px;
+        margin: 0 20px;
+    }
+
+    .brand-logo img {
+        max-width: 125px;
+        max-height: 50px;
+    }
+
+}
