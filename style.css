@@ -1255,16 +1255,14 @@ a {
 }
 
 .services-header {
-    margin-bottom: 55px;
+    margin-bottom: 50px;
 }
 
 .services-header h2 {
-    margin: 0;
-    font-size: clamp(50px, 6vw, 78px);
-    line-height: 0.98;
-    letter-spacing: -3px;
+    font-size: 72px;
+    line-height: 1;
     font-weight: 600;
-    color: #111111;
+    margin: 0;
 }
 
 
