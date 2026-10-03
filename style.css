@@ -152,7 +152,9 @@ img {
 
     min-height: 72vh;
 
-    margin: auto;
+    margin: 0 auto;
+
+    padding: 60px 0;
 
     display: grid;
 
