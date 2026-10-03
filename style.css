@@ -561,7 +561,8 @@ img {
 }
 
 .experience-education-container {
-    width: min(92%, var(--max-width));
+    width: calc(100% - 200px);
+    max-width: 1400px;
 
     margin: 0 auto;
 }
