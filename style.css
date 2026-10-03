@@ -1,6 +1,5 @@
 /* =====================================================
-   SARANG RAM — MINIMAL PORTFOLIO
-   HOME PAGE ONLY
+   SARANG RAM — DIGITAL MARKETING PORTFOLIO
 ===================================================== */
 
 
@@ -11,24 +10,19 @@
 :root {
 
     --black: #212121;
-
     --dark-grey: #3a3a3a;
-
     --grey: #616161;
-
     --light-grey: #e0e0e0;
-
     --off-white: #f7f7f7;
-
     --white: #ffffff;
 
-    --max-width: 1200px;
-
     --font-primary: "Space Grotesk", sans-serif;
-
     --font-secondary: "Sora", sans-serif;
 
+    --page-width: 1320px;
+
 }
+
 
 
 /* =====================================================
@@ -38,7 +32,6 @@
 * {
 
     margin: 0;
-
     padding: 0;
 
     box-sizing: border-box;
@@ -65,8 +58,6 @@ body {
 
     overflow-x: hidden;
 
-    -webkit-font-smoothing: antialiased;
-
 }
 
 
@@ -77,6 +68,38 @@ a {
     text-decoration: none;
 
 }
+
+
+img {
+
+    display: block;
+
+    max-width: 100%;
+
+}
+
+
+
+/* =====================================================
+   SHARED WIDTH
+===================================================== */
+
+.nav-container,
+.hero-container,
+.about-container,
+.services-container,
+.contact-container {
+
+    width: 88%;
+
+    max-width: var(--page-width);
+
+    margin-left: auto;
+
+    margin-right: auto;
+
+}
+
 
 
 /* =====================================================
@@ -95,24 +118,20 @@ a {
 
     z-index: 1000;
 
-    background: rgba(255, 255, 255, 0.94);
+    background: rgba(255, 255, 255, 0.96);
 
     border-bottom: 1px solid var(--light-grey);
 
-    backdrop-filter: blur(16px);
+    backdrop-filter: blur(14px);
 
-    -webkit-backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(14px);
 
 }
 
 
 .nav-container {
 
-    width: min(90%, var(--max-width));
-
     min-height: 76px;
-
-    margin: 0 auto;
 
     display: flex;
 
@@ -123,70 +142,69 @@ a {
 }
 
 
-/* =====================================================
-   LOGO
-===================================================== */
+/* LOGO */
 
 .logo {
-    display: flex;
-    align-items: center;
-}
 
-.logo img {
-    width: 48px;
-    height: 48px;
-    object-fit: contain;
+    width: 100px;
+
+    height: 30px;
+
     display: block;
+
 }
 
 
-/* =====================================================
-   NAVIGATION LINKS
-===================================================== */
+/* NAV LINKS */
 
 .nav-links {
+
     display: flex;
+
     align-items: center;
-    gap: 32px;
+
+    gap: 34px;
 
 }
 
 
 .nav-links a {
 
-    color: var(--black);
+    color: var(--grey);
 
-    font-family: var(--font-secondary);
+    font-size: 16px;
 
-    font-size: 14px;
+    font-weight: 500;
 
-    transition: opacity 0.25s ease;
+    transition:
+        color 0.25s ease;
 
 }
 
 
 .nav-links a:hover {
 
-    opacity: 0.5;
+    color: var(--black);
 
 }
 
 
-/* =====================================================
-   NAVIGATION BUTTON
-===================================================== */
+
+/* NAV BUTTON */
 
 .nav-button {
 
     padding: 10px 20px;
 
+    color: var(--black);
+
     border: 1px solid var(--black);
 
     border-radius: 50px;
 
-    font-family: var(--font-secondary);
+    font-size: 14px;
 
-    font-size: 13px;
+    font-weight: 500;
 
     transition:
         background 0.25s ease,
@@ -204,6 +222,7 @@ a {
 }
 
 
+
 /* =====================================================
    HERO
 ===================================================== */
@@ -212,28 +231,18 @@ a {
 
     min-height: 100vh;
 
-    padding-top: 76px;
+    padding-top: 150px;
+
+    padding-bottom: 80px;
 
     background: var(--white);
 
-    display: flex;
-
-    align-items: center;
-
 }
 
-
-/* =====================================================
-   HERO CONTAINER
-===================================================== */
 
 .hero-container {
 
-    width: min(90%, var(--max-width));
-
-    min-height: calc(100vh - 76px);
-
-    margin: 0 auto;
+    min-height: 72vh;
 
     display: flex;
 
@@ -241,10 +250,6 @@ a {
 
 }
 
-
-/* =====================================================
-   HERO CONTENT
-===================================================== */
 
 .hero-content {
 
@@ -253,87 +258,72 @@ a {
 }
 
 
-/* =====================================================
-   GREETING
-===================================================== */
+/* GREETING */
 
 .hero-greeting {
 
-    margin-bottom: 22px;
+    margin-bottom: 18px;
 
     color: var(--black);
 
-    font-size: 30px;
+    font-family: var(--font-secondary);
+
+    font-size: 24px;
 
     font-weight: 500;
 
-    letter-spacing: -1.2px;
+    letter-spacing: -0.5px;
 
 }
 
 
-/* =====================================================
-   MAIN HEADING
-===================================================== */
+
+/* HERO HEADING */
 
 .hero h1 {
 
-    max-width: 900px;
-
     color: var(--black);
 
-    font-size: clamp(54px, 7vw, 92px);
+    font-family: var(--font-primary);
 
-    line-height: 0.98;
+    font-size: clamp(54px, 6vw, 82px);
 
-    letter-spacing: -4.5px;
+    line-height: 1.04;
+
+    letter-spacing: -4px;
 
     font-weight: 600;
 
 }
 
 
-/* =====================================================
-   DESCRIPTION
-===================================================== */
+
+/* HERO DESCRIPTION */
 
 .hero-description {
 
-    max-width: 620px;
+    max-width: 700px;
 
-    margin-top: 38px;
+    margin-top: 34px;
 
     color: var(--grey);
 
-    font-family: var(--font-secondary);
-
-    font-size: 16px;
+    font-size: 18px;
 
     line-height: 1.8;
 
 }
 
 
-/* =====================================================
-   HERO ACTIONS
-===================================================== */
+
+/* HERO BUTTON */
 
 .hero-actions {
 
-    margin-top: 40px;
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 15px;
+    margin-top: 42px;
 
 }
 
-
-/* =====================================================
-   PRIMARY BUTTON
-===================================================== */
 
 .primary-button {
 
@@ -343,19 +333,579 @@ a {
 
     justify-content: center;
 
-    padding: 13px 24px;
+    padding: 15px 26px;
 
     background: var(--black);
 
     color: var(--white);
 
+    border-radius: 50px;
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease;
+
+}
+
+
+.primary-button:hover {
+
+    transform: translateY(-2px);
+
+    background: #000000;
+
+}
+
+
+
+/* =====================================================
+   SECTION DIVIDER
+===================================================== */
+
+.section-divider {
+
+    width: 88%;
+
+    max-width: var(--page-width);
+
+    height: 1px;
+
+    margin: 0 auto;
+
+    background: var(--light-grey);
+
+}
+
+
+
+/* =====================================================
+   ABOUT
+===================================================== */
+
+.about-section {
+
+    padding: 120px 0;
+
+    background: var(--white);
+
+}
+
+
+.about-container {
+
+    display: grid;
+
+    grid-template-columns: 1fr 0.8fr;
+
+    align-items: center;
+
+    gap: 90px;
+
+}
+
+
+
+/* ABOUT CONTENT */
+
+.about-content {
+
+    max-width: 720px;
+
+}
+
+
+.about-content h2 {
+
+    color: var(--black);
+
+    font-family: var(--font-secondary);
+
+    font-size: clamp(46px, 5vw, 70px);
+
+    line-height: 1.05;
+
+    letter-spacing: -3px;
+
+    font-weight: 500;
+
+}
+
+
+.about-content p {
+
+    max-width: 680px;
+
+    margin-top: 28px;
+
+    color: var(--grey);
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+}
+
+
+
+/* ABOUT PHOTO */
+
+.about-photo {
+
+    display: flex;
+
+    justify-content: flex-end;
+
+}
+
+
+.about-photo-card {
+
+    width: 100%;
+
+    max-width: 480px;
+
+    aspect-ratio: 4 / 5;
+
+    overflow: hidden;
+
+    background: var(--light-grey);
+
+}
+
+
+.about-photo-card img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+
+
+/* =====================================================
+   SERVICES
+===================================================== */
+
+.services-section {
+
+    padding: 90px 0;
+
+    background: var(--white);
+
+}
+
+
+
+/* SERVICES TITLE */
+
+.services-header {
+
+    margin-bottom: 45px;
+
+}
+
+
+.services-header h2 {
+
+    color: var(--black);
+
+    font-family: var(--font-primary);
+
+    font-size: clamp(48px, 5vw, 68px);
+
+    line-height: 1;
+
+    letter-spacing: -3px;
+
+    font-weight: 600;
+
+}
+
+
+
+/* SERVICES GRID */
+
+.services-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    border-top: 1px solid var(--light-grey);
+
+    border-left: 1px solid var(--light-grey);
+
+}
+
+
+
+/* SERVICE ITEM */
+
+.service-item {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 28px;
+
+    padding: 34px 36px;
+
+    border-right: 1px solid var(--light-grey);
+
+    border-bottom: 1px solid var(--light-grey);
+
+}
+
+
+
+/* SERVICE ICON */
+
+.service-icon {
+
+    width: 48px;
+
+    height: 48px;
+
+    min-width: 48px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+}
+
+
+.service-icon svg {
+
+    width: 21px;
+
+    height: 21px;
+
+    stroke-width: 2;
+
+}
+
+
+
+/* ICON COLORS */
+
+.icon-social {
+
+    color: #6366f1;
+
+    background: #f1f1ff;
+
+}
+
+
+.icon-content {
+
+    color: #ec4899;
+
+    background: #fff0f7;
+
+}
+
+
+.icon-video {
+
+    color: #f97316;
+
+    background: #fff4eb;
+
+}
+
+
+.icon-ads {
+
+    color: #2563eb;
+
+    background: #eff5ff;
+
+}
+
+
+.icon-strategy {
+
+    color: #9333ea;
+
+    background: #f7efff;
+
+}
+
+
+.icon-digital {
+
+    color: #0891b2;
+
+    background: #ecfbff;
+
+}
+
+
+.icon-copy {
+
+    color: #16a34a;
+
+    background: #effcf2;
+
+}
+
+
+.icon-ideas {
+
+    color: #eab308;
+
+    background: #fffbea;
+
+}
+
+
+
+/* SERVICE CONTENT */
+
+.service-content {
+
+    flex: 1;
+
+}
+
+
+.service-number {
+
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: #777777;
+
+    font-size: 13px;
+
+    letter-spacing: 1px;
+
+}
+
+
+.service-content h3 {
+
+    margin-bottom: 10px;
+
+    color: var(--black);
+
+    font-size: 21px;
+
+    line-height: 1.3;
+
+    font-weight: 600;
+
+    letter-spacing: -0.4px;
+
+}
+
+
+.service-content p {
+
+    max-width: 540px;
+
+    color: var(--grey);
+
+    font-size: 15px;
+
+    line-height: 1.65;
+
+}
+
+
+
+/* =====================================================
+   CONTACT
+===================================================== */
+
+.contact-section {
+
+    padding: 120px 0;
+
+    background: var(--white);
+
+}
+
+
+.contact-container {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 100px;
+
+    align-items: start;
+
+}
+
+
+
+/* CONTACT HEADING */
+
+.contact-heading h2 {
+
+    color: var(--black);
+
+    font-family: var(--font-secondary);
+
+    font-size: clamp(48px, 5vw, 70px);
+
+    line-height: 1.05;
+
+    letter-spacing: -3px;
+
+    font-weight: 500;
+
+}
+
+
+
+/* CONTACT INFO */
+
+.contact-info {
+
+    max-width: 600px;
+
+}
+
+
+.contact-intro {
+
+    margin-bottom: 50px;
+
+    color: var(--grey);
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+}
+
+
+
+/* CONTACT BLOCK */
+
+.contact-block {
+
+    padding: 25px 0;
+
+    border-top: 1px solid var(--light-grey);
+
+}
+
+
+.contact-block-label {
+
+    display: block;
+
+    margin-bottom: 12px;
+
+    color: var(--grey);
+
+    font-size: 12px;
+
+    font-weight: 500;
+
+    letter-spacing: 2px;
+
+}
+
+
+
+/* EMAIL */
+
+.contact-link {
+
+    color: var(--black);
+
+    font-size: 18px;
+
+    transition: opacity 0.25s ease;
+
+}
+
+
+.contact-link:hover {
+
+    opacity: 0.55;
+
+}
+
+
+
+/* SOCIAL */
+
+.social-links {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+}
+
+
+.social-links a {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    max-width: 300px;
+
+    color: var(--black);
+
+    font-size: 17px;
+
+    transition: opacity 0.25s ease;
+
+}
+
+
+.social-links a:hover {
+
+    opacity: 0.55;
+
+}
+
+
+
+/* WHATSAPP */
+
+.whatsapp-button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 13px 18px;
+
     border: 1px solid var(--black);
 
     border-radius: 50px;
 
-    font-family: var(--font-secondary);
+    color: var(--black);
 
-    font-size: 13px;
+    font-size: 14px;
 
     transition:
         background 0.25s ease,
@@ -364,13 +914,39 @@ a {
 }
 
 
-.primary-button:hover {
+.whatsapp-button:hover {
 
-    background: var(--white);
+    background: var(--black);
 
-    color: var(--black);
+    color: var(--white);
 
 }
+
+
+.whatsapp-button > span:last-child {
+
+    margin-left: 8px;
+
+}
+
+
+.whatsapp-icon {
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+
+.whatsapp-icon svg {
+
+    width: 18px;
+
+    height: 18px;
+
+}
+
 
 
 /* =====================================================
@@ -379,25 +955,26 @@ a {
 
 .footer {
 
-    width: min(90%, var(--max-width));
+    width: 88%;
+
+    max-width: var(--page-width);
 
     margin: 0 auto;
 
-    padding: 25px 0;
-
-    border-top: 1px solid var(--light-grey);
+    padding: 28px 0;
 
     display: flex;
 
     justify-content: space-between;
 
+    align-items: center;
+
     color: var(--grey);
 
-    font-family: var(--font-secondary);
-
-    font-size: 12px;
+    font-size: 13px;
 
 }
+
 
 
 /* =====================================================
@@ -407,34 +984,88 @@ a {
 @media (max-width: 900px) {
 
 
-    .hero-container {
+    .nav-links {
 
-        padding: 80px 0;
+        gap: 20px;
 
     }
 
 
     .hero h1 {
 
-        font-size: clamp(50px, 8vw, 75px);
+        font-size: clamp(48px, 7vw, 68px);
+
+    }
+
+
+    .about-container {
+
+        grid-template-columns: 1fr;
+
+        gap: 60px;
+
+    }
+
+
+    .about-photo {
+
+        justify-content: flex-start;
+
+    }
+
+
+    .about-photo-card {
+
+        max-width: 500px;
+
+    }
+
+
+    .services-grid {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+
+    .service-item {
+
+        padding: 30px 25px;
+
+    }
+
+
+    .contact-container {
+
+        grid-template-columns: 1fr;
+
+        gap: 60px;
 
     }
 
 }
 
 
+
 /* =====================================================
    MOBILE
 ===================================================== */
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
 
 
-    /* Navigation */
+    .nav-container,
+    .hero-container,
+    .about-container,
+    .services-container,
+    .contact-container {
+
+        width: 88%;
+
+    }
+
 
     .nav-container {
-
-        width: 90%;
 
         min-height: 68px;
 
@@ -448,62 +1079,70 @@ a {
     }
 
 
+    .logo {
+
+        width: 50px;
+
+    }
+
+
     .nav-button {
 
-        padding: 8px 15px;
+        padding: 9px 15px;
 
         font-size: 12px;
 
     }
 
 
-    /* Hero */
+
+    /* HERO */
 
     .hero {
 
-        padding-top: 68px;
+        min-height: auto;
+
+        padding-top: 120px;
+
+        padding-bottom: 80px;
 
     }
 
 
     .hero-container {
 
-        width: 90%;
-
-        min-height: calc(100vh - 68px);
-
-        padding: 70px 0;
+        min-height: auto;
 
     }
 
 
     .hero-greeting {
 
-        font-size: 24px;
+        font-size: 21px;
 
-        margin-bottom: 18px;
+        margin-bottom: 15px;
 
     }
 
 
     .hero h1 {
 
-        font-size: 44px;
+        font-size: 43px;
 
-        line-height: 1.02;
+        line-height: 1.06;
 
-        letter-spacing: -2.5px;
+        letter-spacing: -2px;
 
     }
 
 
     .hero-description {
 
-        margin-top: 28px;
+        margin-top: 25px;
 
-        font-size: 14px;
+        font-size: 15px;
 
-        line-height: 1.75;
+        line-height: 1.7;
 
     }
 
@@ -515,980 +1154,198 @@ a {
     }
 
 
-    .primary-button {
 
-        padding: 12px 20px;
+    /* ABOUT */
 
-        font-size: 12px;
+    .about-section {
+
+        padding: 80px 0;
 
     }
 
 
-    /* Footer */
+    .about-content h2 {
+
+        font-size: 43px;
+
+        letter-spacing: -2px;
+
+    }
+
+
+    .about-content p {
+
+        font-size: 15px;
+
+        line-height: 1.7;
+
+        margin-top: 23px;
+
+    }
+
+
+
+    /* SERVICES */
+
+    .services-section {
+
+        padding: 75px 0;
+
+    }
+
+
+    .services-header {
+
+        margin-bottom: 30px;
+
+    }
+
+
+    .services-header h2 {
+
+        font-size: 48px;
+
+        letter-spacing: -2px;
+
+    }
+
+
+    .services-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .service-item {
+
+        padding: 28px 22px;
+
+        gap: 20px;
+
+    }
+
+
+    .service-icon {
+
+        width: 44px;
+
+        height: 44px;
+
+        min-width: 44px;
+
+    }
+
+
+    .service-content h3 {
+
+        font-size: 19px;
+
+    }
+
+
+    .service-content p {
+
+        font-size: 14px;
+
+    }
+
+
+
+    /* CONTACT */
+
+    .contact-section {
+
+        padding: 80px 0;
+
+    }
+
+
+    .contact-heading h2 {
+
+        font-size: 46px;
+
+        letter-spacing: -2px;
+
+    }
+
+
+    .contact-intro {
+
+        font-size: 16px;
+
+        margin-bottom: 35px;
+
+    }
+
+
+    .contact-link {
+
+        font-size: 16px;
+
+    }
+
+
+
+    /* FOOTER */
 
     .footer {
 
-        width: 90%;
-
-        padding: 22px 0;
+        width: 88%;
 
         flex-direction: column;
 
-        gap: 6px;
+        align-items: flex-start;
+
+        gap: 5px;
+
+        padding: 24px 0;
 
     }
 
 }
-/* =====================================================
-   SECTION SEPARATOR
-===================================================== */
 
-.section-divider {
-    width: 92%;
-    max-width: var(--max-width);
-    height: 1px;
-    margin: 0 auto;
-    background: var(--light-grey);
-}
-/* =====================================================
-   CONTACT PAGE
-===================================================== */
-
-.contact-page {
-    min-height: calc(100vh - 76px);
-
-    padding-top: 76px;
-
-    display: flex;
-
-    align-items: center;
-
-    background: var(--white);
-}
-
-
-.contact-container {
-    width: min(90%, var(--max-width));
-
-    margin: 0 auto;
-
-    padding: 100px 0;
-}
-
-
-/* Label */
-
-.contact-label {
-    margin-bottom: 80px;
-
-    color: var(--grey);
-
-    font-family: var(--font-secondary);
-
-    font-size: 12px;
-
-    font-weight: 500;
-
-    letter-spacing: 2px;
-}
-
-
-/* Main layout */
-
-.contact-main {
-    display: grid;
-
-    grid-template-columns: 1.1fr 0.9fr;
-
-    gap: 100px;
-
-    align-items: start;
-}
-
-
-/* Heading */
-
-.contact-heading h1 {
-    color: var(--black);
-
-    font-size: clamp(60px, 8vw, 110px);
-
-    line-height: 0.95;
-
-    letter-spacing: -5px;
-
-    font-weight: 600;
-}
-
-
-/* Information */
-
-.contact-info {
-    max-width: 480px;
-}
-
-
-.contact-intro {
-    margin-bottom: 60px;
-
-    color: var(--grey);
-
-    font-family: var(--font-secondary);
-
-    font-size: 17px;
-
-    line-height: 1.8;
-}
-
-
-/* Contact blocks */
-
-.contact-block {
-    padding: 25px 0;
-
-    border-top: 1px solid var(--light-grey);
-}
-
-
-.contact-block:last-child {
-    border-bottom: 1px solid var(--light-grey);
-}
-
-
-.contact-block-label {
-    display: block;
-
-    margin-bottom: 12px;
-
-    color: var(--grey);
-
-    font-family: var(--font-secondary);
-
-    font-size: 11px;
-
-    font-weight: 500;
-
-    letter-spacing: 1.5px;
-}
-
-
-/* Email */
-
-.contact-link {
-    color: var(--black);
-
-    font-size: 17px;
-
-    transition: opacity 0.25s ease;
-}
-
-
-.contact-link:hover {
-    opacity: 0.5;
-}
-
-
-/* Social */
-
-.social-links {
-    display: flex;
-
-    flex-direction: column;
-
-    gap: 10px;
-}
-
-
-.social-links a {
-    display: flex;
-
-    justify-content: space-between;
-
-    width: 100%;
-
-    color: var(--black);
-
-    font-size: 16px;
-
-    transition: opacity 0.25s ease;
-}
-
-
-.social-links a:hover {
-    opacity: 0.5;
-}
-
-
-.social-links span {
-    color: var(--grey);
-}
-
-
-/* WhatsApp */
-
-.whatsapp-button {
-    display: inline-flex;
-
-    align-items: center;
-
-    gap: 12px;
-
-    color: var(--black);
-
-    font-size: 16px;
-
-    transition: opacity 0.25s ease;
-}
-
-
-.whatsapp-button:hover {
-    opacity: 0.5;
-}
-
-
-.whatsapp-button > span:last-child {
-    color: var(--grey);
-}
-
-
-.whatsapp-icon {
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    width: 28px;
-
-    height: 28px;
-
-    border: 1px solid var(--black);
-
-    border-radius: 50%;
-
-    font-size: 12px;
-}
 
 
 /* =====================================================
-   CONTACT MOBILE
+   SMALL MOBILE
 ===================================================== */
 
-@media (max-width: 800px) {
+@media (max-width: 420px) {
 
-    .contact-page {
-        padding-top: 68px;
+
+    .hero h1 {
+
+        font-size: 38px;
+
     }
 
-
-    .contact-container {
-        padding: 80px 0;
-    }
-
-
-    .contact-label {
-        margin-bottom: 55px;
-    }
-
-
-    .contact-main {
-        grid-template-columns: 1fr;
-
-        gap: 60px;
-    }
-
-
-    .contact-heading h1 {
-        font-size: clamp(54px, 14vw, 80px);
-
-        letter-spacing: -3px;
-    }
-
-
-    .contact-info {
-        max-width: 600px;
-    }
-
-}
-
-
-@media (max-width: 600px) {
-
-    .contact-container {
-        width: 90%;
-
-        padding: 65px 0;
-    }
-
-
-    .contact-label {
-        margin-bottom: 45px;
-    }
-
-
-    .contact-heading h1 {
-        font-size: 52px;
-
-        line-height: 0.98;
-
-        letter-spacing: -2.5px;
-    }
-
-
-    .contact-intro {
-        margin-bottom: 40px;
-
-        font-size: 14px;
-    }
-
-
-    .contact-link {
-        font-size: 15px;
-    }
-
-}
-/* =====================================================
-   CONTACT SECTION
-===================================================== */
-
-.contact-section {
-    padding: 160px 0 120px;
-    background: var(--white);
-}
-
-.contact-container {
-    width: min(90%, var(--max-width));
-    margin: 0 auto;
-}
-
-.contact-label {
-    margin-bottom: 80px;
-
-    color: var(--grey);
-
-    font-family: var(--font-secondary);
-
-    font-size: 12px;
-
-    font-weight: 500;
-
-    letter-spacing: 2px;
-}
-
-.contact-main {
-    display: grid;
-
-    grid-template-columns: 1.1fr 0.9fr;
-
-    gap: 100px;
-
-    align-items: start;
-}
-
-.contact-heading h2 {
-    margin: 0;
-
-    color: var(--black);
-
-    font-size: clamp(60px, 8vw, 110px);
-
-    line-height: 0.95;
-
-    letter-spacing: -5px;
-
-    font-weight: 600;
-}
-
-.contact-info {
-    max-width: 480px;
-}
-
-.contact-intro {
-    margin-bottom: 60px;
-
-    color: var(--grey);
-
-    font-family: var(--font-secondary);
-
-    font-size: 17px;
-
-    line-height: 1.8;
-}
-
-.contact-block {
-    padding: 25px 0;
-
-    border-top: 1px solid var(--light-grey);
-}
-
-.contact-block:last-child {
-    border-bottom: 1px solid var(--light-grey);
-}
-
-.contact-block-label {
-    display: block;
-
-    margin-bottom: 12px;
-
-    color: var(--grey);
-
-    font-family: var(--font-secondary);
-
-    font-size: 11px;
-
-    font-weight: 500;
-
-    letter-spacing: 1.5px;
-}
-
-.contact-link {
-    color: var(--black);
-
-    font-size: 17px;
-
-    transition: opacity 0.25s ease;
-}
-
-.contact-link:hover {
-    opacity: 0.5;
-}
-
-.social-links {
-    display: flex;
-
-    flex-direction: column;
-
-    gap: 10px;
-}
-
-.social-links a {
-    display: flex;
-
-    justify-content: space-between;
-
-    width: 100%;
-
-    color: var(--black);
-
-    font-size: 16px;
-
-    transition: opacity 0.25s ease;
-}
-
-.social-links a:hover {
-    opacity: 0.5;
-}
-
-.social-links span {
-    color: var(--grey);
-}
-
-.whatsapp-button {
-    display: inline-flex;
-
-    align-items: center;
-
-    gap: 12px;
-
-    color: var(--black);
-
-    font-size: 16px;
-
-    transition: opacity 0.25s ease;
-}
-
-.whatsapp-button:hover {
-    opacity: 0.5;
-}
-
-.whatsapp-icon {
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    width: 28px;
-
-    height: 28px;
-
-    border: 1px solid var(--black);
-
-    border-radius: 50%;
-
-    font-size: 12px;
-}
-
-@media (max-width: 800px) {
-
-    .contact-section {
-        padding: 100px 0 80px;
-    }
-
-    .contact-label {
-        margin-bottom: 55px;
-    }
-
-    .contact-main {
-        grid-template-columns: 1fr;
-
-        gap: 60px;
-    }
-
-    .contact-heading h2 {
-        font-size: clamp(54px, 14vw, 80px);
-
-        letter-spacing: -3px;
-    }
-
-    .contact-info {
-        max-width: 600px;
-    }
-}
-
-@media (max-width: 600px) {
-
-    .contact-container {
-        width: 90%;
-    }
-
-    .contact-heading h2 {
-        font-size: 52px;
-
-        letter-spacing: -2.5px;
-    }
-
-    .contact-intro {
-        font-size: 14px;
-    }
-
-    .contact-link {
-        font-size: 15px;
-    }
-}
-/* =====================================================
-   SECTION SEPARATOR
-===================================================== */
-
-.section-divider {
-    width: 92%;
-    max-width: var(--max-width);
-    height: 1px;
-    margin: 0 auto;
-    background: var(--light-grey);
-}
-/* =====================================================
-   ABOUT ME
-===================================================== */
-
-.about-section {
-    padding: 150px 0;
-
-    background: var(--white);
-}
-
-.about-container {
-    width: min(90%, var(--max-width));
-
-    margin: 0 auto;
-}
-
-.about-label {
-    margin-bottom: 80px;
-
-    color: var(--grey);
-
-    font-family: var(--font-secondary);
-
-    font-size: 12px;
-
-    font-weight: 500;
-
-    letter-spacing: 2px;
-}
-
-.about-grid {
-    display: grid;
-
-    grid-template-columns: 1fr 0.8fr;
-
-    gap: 100px;
-
-    align-items: center;
-}
-
-.about-content {
-    max-width: 650px;
-}
-
-.about-content h2 {
-    margin-bottom: 45px;
-
-    color: var(--black);
-
-    font-size: clamp(58px, 7vw, 92px);
-
-    line-height: 0.96;
-
-    letter-spacing: -4px;
-
-    font-weight: 600;
-}
-
-.about-content p {
-    max-width: 620px;
-
-    margin-bottom: 20px;
-
-    color: var(--grey);
-
-    font-family: var(--font-secondary);
-
-    font-size: 16px;
-
-    line-height: 1.8;
-}
-
-.about-content p:last-child {
-    margin-bottom: 0;
-}
-
-.about-photo {
-    display: flex;
-
-    justify-content: flex-end;
-}
-
-.about-photo-card {
-    width: min(420px, 100%);
-
-    aspect-ratio: 4 / 5;
-
-    overflow: hidden;
-
-    background: var(--light-grey);
-}
-
-.about-photo-card img {
-    width: 100%;
-
-    height: 100%;
-
-    object-fit: cover;
-
-    display: block;
-}
-
-
-/* =====================================================
-   ABOUT MOBILE
-===================================================== */
-
-@media (max-width: 850px) {
-
-    .about-section {
-        padding: 100px 0;
-    }
-
-    .about-label {
-        margin-bottom: 55px;
-    }
-
-    .about-grid {
-        grid-template-columns: 1fr;
-
-        gap: 60px;
-    }
-
-    .about-content h2 {
-        font-size: clamp(54px, 12vw, 80px);
-
-        letter-spacing: -3px;
-    }
-
-    .about-photo {
-        justify-content: flex-start;
-    }
-
-}
-
-@media (max-width: 600px) {
-
-    .about-container {
-        width: 90%;
-    }
-
-    .about-section {
-        padding: 80px 0;
-    }
-
-    .about-content h2 {
-        font-size: 52px;
-
-        letter-spacing: -2.5px;
-    }
-
-    .about-content p {
-        font-size: 14px;
-
-        line-height: 1.75;
-    }
-
-    .about-photo-card {
-        width: 100%;
-    }
-
-}
-/* =====================================================
-   SERVICES
-===================================================== */
-
-.services-section {
-    padding: 100px 0;
-    background: #ffffff;
-}
-
-.services-container {
-    width: 90%;
-    max-width: 1400px;
-    margin: 0 auto;
-}
-
-.services-header {
-    margin-bottom: 50px;
-}
-
-.services-header h2 {
-    font-size: 72px;
-    line-height: 1;
-    font-weight: 600;
-    margin: 0;
-}
-
-
-/* =====================================================
-   GRID
-===================================================== */
-
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-
-    border-top: 1px solid #dddddd;
-}
-
-
-/* =====================================================
-   SERVICE ITEM
-===================================================== */
-
-.service-item {
-    display: grid;
-
-    grid-template-columns: 42px 1fr;
-
-    gap: 18px;
-
-    min-height: 175px;
-
-    padding: 28px 35px;
-
-    box-sizing: border-box;
-
-    border-bottom: 1px solid #dddddd;
-}
-
-
-/* Vertical divider */
-
-.service-item:nth-child(odd) {
-    border-right: 1px solid #dddddd;
-}
-
-
-/* =====================================================
-   ICON
-===================================================== */
-
-.service-icon {
-    width: 42px;
-    height: 42px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border-radius: 50%;
-
-    background: #f6f6f6;
-}
-
-.service-icon svg {
-    width: 20px;
-    height: 20px;
-
-    display: block;
-
-    stroke-width: 2;
-}
-
-
-/* Icon colours */
-
-.icon-social {
-    color: #6366f1;
-}
-
-.icon-content {
-    color: #ec4899;
-}
-
-.icon-video {
-    color: #f97316;
-}
-
-.icon-ads {
-    color: #2563eb;
-}
-
-.icon-strategy {
-    color: #9333ea;
-}
-
-.icon-digital {
-    color: #0891b2;
-}
-
-.icon-copy {
-    color: #d97706;
-}
-
-.icon-ideas {
-    color: #eab308;
-}
-
-
-/* =====================================================
-   CONTENT
-===================================================== */
-
-.service-content {
-    padding-top: 1px;
-}
-
-.service-number {
-    display: block;
-
-    margin-bottom: 10px;
-
-    font-size: 11px;
-
-    letter-spacing: 1.5px;
-
-    color: #777777;
-}
-
-.service-content h3 {
-    margin: 0 0 10px;
-
-    font-size: 20px;
-
-    line-height: 1.25;
-
-    font-weight: 600;
-
-    color: #111111;
-}
-
-.service-content p {
-    max-width: 470px;
-
-    margin: 0;
-
-    font-size: 14px;
-
-    line-height: 1.6;
-
-    color: #666666;
-}
-
-
-/* =====================================================
-   HOVER
-===================================================== */
-
-.service-icon {
-    transition: transform 0.25s ease;
-}
-
-.service-item:hover .service-icon {
-    transform: scale(1.08);
-}
-
-
-/* =====================================================
-   TABLET
-===================================================== */
-
-@media (max-width: 850px) {
-
-    .services-section {
-        padding: 80px 0;
-    }
-
-    .services-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .service-item:nth-child(odd) {
-        border-right: none;
-    }
-
-    .service-item {
-        min-height: auto;
-        padding: 28px 0;
-    }
-
-}
-
-
-/* =====================================================
-   MOBILE
-===================================================== */
-
-@media (max-width: 600px) {
-
-    .services-container {
-        width: 90%;
-    }
 
     .services-header h2 {
-        font-size: 48px;
-        letter-spacing: -2px;
+
+        font-size: 42px;
+
     }
+
 
     .service-item {
-        grid-template-columns: 40px 1fr;
-        gap: 15px;
-        padding: 25px 0;
+
+        padding: 25px 18px;
+
     }
 
-    .service-icon {
-        width: 38px;
-        height: 38px;
-    }
-
-    .service-icon svg {
-        width: 18px;
-        height: 18px;
-    }
 
     .service-content h3 {
+
         font-size: 18px;
+
     }
 
-    .service-content p {
-        font-size: 13px;
+
+    .contact-heading h2 {
+
+        font-size: 40px;
+
     }
 
 }
