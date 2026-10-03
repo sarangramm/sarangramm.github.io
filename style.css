@@ -162,19 +162,19 @@ a {
     letter-spacing: 2px;
 }
 .hero-greeting {
-    margin-bottom: 14px;
+    margin-bottom: 16px;
     color: #ffffff;
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 30px;
+    font-weight: 600;
 }
 
 .hero h1 {
     max-width: 720px;
 
-    font-size: clamp(46px, 6vw, 78px);
-    line-height: 1.02;
+    font-size: clamp(38px, 4.8vw, 62px);
+    line-height: 1.05;
 
-    letter-spacing: -3px;
+    letter-spacing: -2px;
 }
 
 .hero h1 span {
