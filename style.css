@@ -170,11 +170,13 @@ a {
 
 .hero h1 {
     max-width: 720px;
-
     font-size: clamp(38px, 4.8vw, 62px);
     line-height: 1.05;
-
     letter-spacing: -2px;
+}
+
+.title-nowrap {
+    white-space: nowrap;
 }
 
 .hero h1 span {
