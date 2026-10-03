@@ -1239,3 +1239,369 @@ a {
     }
 
 }
+/* =====================================================
+   SERVICES
+===================================================== */
+
+.services-section {
+    padding: 150px 0;
+
+    background: var(--white);
+}
+
+
+.services-container {
+    width: min(90%, var(--max-width));
+
+    margin: 0 auto;
+}
+
+
+/* =====================================================
+   SERVICES HEADER
+===================================================== */
+
+.services-label {
+    margin-bottom: 70px;
+
+    color: var(--grey);
+
+    font-family: var(--font-secondary);
+
+    font-size: 12px;
+
+    font-weight: 500;
+
+    letter-spacing: 2px;
+}
+
+
+.services-header {
+    margin-bottom: 90px;
+}
+
+
+.services-header h2 {
+    margin: 0;
+
+    color: var(--black);
+
+    font-size: clamp(55px, 7vw, 90px);
+
+    line-height: 0.98;
+
+    letter-spacing: -4px;
+
+    font-weight: 600;
+}
+
+
+/* =====================================================
+   SERVICES GRID
+===================================================== */
+
+.services-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    border-top: 1px solid var(--light-grey);
+}
+
+
+/* =====================================================
+   SERVICE ITEM
+===================================================== */
+
+.service-item {
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns: 48px 1fr;
+
+    gap: 24px;
+
+    min-height: 240px;
+
+    padding: 40px 40px 40px 0;
+
+    border-bottom: 1px solid var(--light-grey);
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+/* Vertical divider */
+
+.service-item:nth-child(odd) {
+    border-right: 1px solid var(--light-grey);
+
+    padding-right: 45px;
+}
+
+
+.service-item:nth-child(even) {
+    padding-left: 45px;
+}
+
+
+/* =====================================================
+   SERVICE ICON
+===================================================== */
+
+.service-icon {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 42px;
+
+    height: 42px;
+
+    border-radius: 50%;
+
+    background: #f7f7f7;
+
+    flex-shrink: 0;
+}
+
+
+.service-icon svg {
+    width: 20px;
+
+    height: 20px;
+
+    stroke-width: 1.8;
+}
+
+
+/* Individual icon colours */
+
+.icon-social {
+    color: #6c63ff;
+}
+
+.icon-content {
+    color: #e85d9e;
+}
+
+.icon-video {
+    color: #ff6b35;
+}
+
+.icon-ads {
+    color: #2f80ed;
+}
+
+.icon-strategy {
+    color: #9b51e0;
+}
+
+.icon-digital {
+    color: #00a896;
+}
+
+.icon-copy {
+    color: #d97706;
+}
+
+.icon-ideas {
+    color: #eab308;
+}
+
+
+/* =====================================================
+   SERVICE CONTENT
+===================================================== */
+
+.service-content {
+    padding-top: 2px;
+}
+
+
+.service-number {
+    display: block;
+
+    margin-bottom: 14px;
+
+    color: var(--grey);
+
+    font-family: var(--font-secondary);
+
+    font-size: 11px;
+
+    font-weight: 500;
+
+    letter-spacing: 1.5px;
+}
+
+
+.service-content h3 {
+    margin-bottom: 14px;
+
+    color: var(--black);
+
+    font-size: 21px;
+
+    line-height: 1.25;
+
+    font-weight: 600;
+
+    letter-spacing: -0.5px;
+}
+
+
+.service-content p {
+    max-width: 430px;
+
+    color: var(--grey);
+
+    font-family: var(--font-secondary);
+
+    font-size: 14px;
+
+    line-height: 1.75;
+}
+
+
+/* =====================================================
+   HOVER
+===================================================== */
+
+.service-item:hover {
+    background: var(--off-white);
+}
+
+
+.service-item:hover .service-icon {
+    transform: scale(1.08);
+}
+
+
+.service-icon {
+    transition: transform 0.3s ease;
+}
+
+
+/* =====================================================
+   SERVICES — TABLET
+===================================================== */
+
+@media (max-width: 850px) {
+
+    .services-section {
+        padding: 100px 0;
+    }
+
+
+    .services-label {
+        margin-bottom: 55px;
+    }
+
+
+    .services-header {
+        margin-bottom: 65px;
+    }
+
+
+    .services-header h2 {
+        font-size: clamp(52px, 12vw, 75px);
+
+        letter-spacing: -3px;
+    }
+
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .service-item,
+    .service-item:nth-child(odd),
+    .service-item:nth-child(even) {
+
+        padding: 32px 0;
+
+        border-right: none;
+    }
+
+
+    .service-item {
+        min-height: auto;
+    }
+
+}
+
+
+/* =====================================================
+   SERVICES — MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .services-container {
+        width: 90%;
+    }
+
+
+    .services-section {
+        padding: 80px 0;
+    }
+
+
+    .services-header h2 {
+        font-size: 50px;
+
+        line-height: 1;
+
+        letter-spacing: -2.5px;
+    }
+
+
+    .service-item {
+
+        grid-template-columns: 42px 1fr;
+
+        gap: 16px;
+
+        padding: 30px 0;
+    }
+
+
+    .service-icon {
+
+        width: 38px;
+
+        height: 38px;
+    }
+
+
+    .service-icon svg {
+
+        width: 18px;
+
+        height: 18px;
+    }
+
+
+    .service-content h3 {
+
+        font-size: 18px;
+
+        margin-bottom: 10px;
+    }
+
+
+    .service-content p {
+
+        font-size: 13px;
+
+        line-height: 1.7;
+    }
+
+}
