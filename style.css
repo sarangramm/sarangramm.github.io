@@ -1,6 +1,6 @@
 /* =====================================================
    SARANG RAM — MINIMAL PORTFOLIO
-   MONOCHROME / APPLE-INSPIRED
+   HOME PAGE ONLY
 ===================================================== */
 
 
@@ -27,6 +27,7 @@
     --font-primary: "Space Grotesk", sans-serif;
 
     --font-secondary: "Sora", sans-serif;
+
 }
 
 
@@ -35,14 +36,20 @@
 ===================================================== */
 
 * {
+
     margin: 0;
+
     padding: 0;
+
     box-sizing: border-box;
+
 }
 
 
 html {
+
     scroll-behavior: smooth;
+
 }
 
 
@@ -59,18 +66,16 @@ body {
     overflow-x: hidden;
 
     -webkit-font-smoothing: antialiased;
+
 }
 
 
 a {
+
     color: inherit;
+
     text-decoration: none;
-}
 
-
-img {
-    display: block;
-    max-width: 100%;
 }
 
 
@@ -83,6 +88,7 @@ img {
     position: fixed;
 
     top: 0;
+
     left: 0;
 
     width: 100%;
@@ -96,6 +102,7 @@ img {
     backdrop-filter: blur(16px);
 
     -webkit-backdrop-filter: blur(16px);
+
 }
 
 
@@ -112,6 +119,7 @@ img {
     align-items: center;
 
     justify-content: space-between;
+
 }
 
 
@@ -128,6 +136,7 @@ img {
     letter-spacing: -1.5px;
 
     color: var(--black);
+
 }
 
 
@@ -141,25 +150,28 @@ img {
 
     align-items: center;
 
-    gap: 34px;
+    justify-content: center;
+
 }
 
 
 .nav-links a {
 
-    color: var(--grey);
+    color: var(--black);
 
     font-family: var(--font-secondary);
 
     font-size: 14px;
 
-    transition: color 0.25s ease;
+    transition: opacity 0.25s ease;
+
 }
 
 
 .nav-links a:hover {
 
-    color: var(--black);
+    opacity: 0.5;
+
 }
 
 
@@ -182,6 +194,7 @@ img {
     transition:
         background 0.25s ease,
         color 0.25s ease;
+
 }
 
 
@@ -190,6 +203,7 @@ img {
     background: var(--black);
 
     color: var(--white);
+
 }
 
 
@@ -208,8 +222,13 @@ img {
     display: flex;
 
     align-items: center;
+
 }
 
+
+/* =====================================================
+   HERO CONTAINER
+===================================================== */
 
 .hero-container {
 
@@ -219,15 +238,10 @@ img {
 
     margin: 0 auto;
 
-    padding: 80px 0;
-
-    display: grid;
-
-    grid-template-columns: 1fr 0.85fr;
+    display: flex;
 
     align-items: center;
 
-    gap: 90px;
 }
 
 
@@ -237,13 +251,18 @@ img {
 
 .hero-content {
 
-    max-width: 700px;
+    max-width: 900px;
+
 }
 
 
+/* =====================================================
+   GREETING
+===================================================== */
+
 .hero-greeting {
 
-    margin-bottom: 20px;
+    margin-bottom: 22px;
 
     color: var(--black);
 
@@ -252,30 +271,40 @@ img {
     font-weight: 500;
 
     letter-spacing: -1.2px;
+
 }
 
+
+/* =====================================================
+   MAIN HEADING
+===================================================== */
 
 .hero h1 {
 
-    max-width: 720px;
+    max-width: 900px;
 
     color: var(--black);
 
-    font-size: clamp(48px, 5vw, 72px);
+    font-size: clamp(54px, 7vw, 92px);
 
-    line-height: 1.02;
+    line-height: 0.98;
 
-    letter-spacing: -3.5px;
+    letter-spacing: -4.5px;
 
     font-weight: 600;
+
 }
 
+
+/* =====================================================
+   DESCRIPTION
+===================================================== */
 
 .hero-description {
 
-    max-width: 570px;
+    max-width: 620px;
 
-    margin-top: 32px;
+    margin-top: 38px;
 
     color: var(--grey);
 
@@ -284,189 +313,66 @@ img {
     font-size: 16px;
 
     line-height: 1.8;
+
 }
 
 
 /* =====================================================
-   HERO PHOTO
+   HERO ACTIONS
 ===================================================== */
 
-.hero-visual {
+.hero-actions {
+
+    margin-top: 40px;
 
     display: flex;
 
-    justify-content: flex-end;
+    align-items: center;
+
+    gap: 15px;
+
+}
+
+
+/* =====================================================
+   PRIMARY BUTTON
+===================================================== */
+
+.primary-button {
+
+    display: inline-flex;
 
     align-items: center;
-}
 
+    justify-content: center;
 
-.photo-card {
+    padding: 13px 24px;
 
-    width: min(470px, 100%);
+    background: var(--black);
 
-    aspect-ratio: 4 / 5;
+    color: var(--white);
 
-    overflow: hidden;
+    border: 1px solid var(--black);
 
-    border-radius: 6px;
-
-    background: var(--light-grey);
-}
-
-
-.photo-card img {
-
-    width: 100%;
-
-    height: 100%;
-
-    object-fit: cover;
-
-    filter: grayscale(100%);
-
-    transition: filter 0.6s ease,
-                transform 0.6s ease;
-}
-
-
-.photo-card:hover img {
-
-    filter: grayscale(0%);
-
-    transform: scale(1.02);
-}
-
-
-/* =====================================================
-   WORK SECTION
-===================================================== */
-
-.work-section {
-
-    padding: 160px 0;
-
-    background: var(--off-white);
-
-    border-top: 1px solid var(--light-grey);
-}
-
-
-.section-container {
-
-    width: min(90%, var(--max-width));
-
-    margin: 0 auto;
-}
-
-
-.section-label {
-
-    margin-bottom: 70px;
-
-    color: var(--grey);
+    border-radius: 50px;
 
     font-family: var(--font-secondary);
 
-    font-size: 12px;
+    font-size: 13px;
 
-    font-weight: 500;
+    transition:
+        background 0.25s ease,
+        color 0.25s ease;
 
-    letter-spacing: 2px;
 }
 
 
-.work-intro {
-
-    max-width: 850px;
-}
-
-
-.work-intro h2 {
-
-    color: var(--black);
-
-    font-size: clamp(42px, 5vw, 70px);
-
-    line-height: 1.05;
-
-    letter-spacing: -3px;
-
-    font-weight: 600;
-}
-
-
-.work-intro p {
-
-    max-width: 600px;
-
-    margin-top: 35px;
-
-    color: var(--grey);
-
-    font-family: var(--font-secondary);
-
-    font-size: 16px;
-
-    line-height: 1.8;
-}
-
-
-/* =====================================================
-   CONTACT SECTION
-===================================================== */
-
-.contact-section {
-
-    padding: 160px 0;
+.primary-button:hover {
 
     background: var(--white);
 
-    border-top: 1px solid var(--light-grey);
-}
-
-
-.contact-content {
-
-    max-width: 900px;
-}
-
-
-.contact-content h2 {
-
     color: var(--black);
 
-    font-size: clamp(44px, 5vw, 72px);
-
-    line-height: 1.04;
-
-    letter-spacing: -3px;
-
-    font-weight: 600;
-}
-
-
-.contact-link {
-
-    display: inline-block;
-
-    margin-top: 45px;
-
-    padding-bottom: 5px;
-
-    border-bottom: 1px solid var(--black);
-
-    font-family: var(--font-secondary);
-
-    font-size: 16px;
-
-    transition: opacity 0.25s ease;
-}
-
-
-.contact-link:hover {
-
-    opacity: 0.5;
 }
 
 
@@ -480,7 +386,7 @@ img {
 
     margin: 0 auto;
 
-    padding: 30px 0;
+    padding: 25px 0;
 
     border-top: 1px solid var(--light-grey);
 
@@ -493,6 +399,7 @@ img {
     font-family: var(--font-secondary);
 
     font-size: 12px;
+
 }
 
 
@@ -502,32 +409,20 @@ img {
 
 @media (max-width: 900px) {
 
+
     .hero-container {
 
-        grid-template-columns: 1fr;
-
-        gap: 60px;
-
         padding: 80px 0;
+
     }
 
 
-    .hero-content {
+    .hero h1 {
 
-        max-width: 800px;
+        font-size: clamp(50px, 8vw, 75px);
+
     }
 
-
-    .hero-visual {
-
-        justify-content: flex-start;
-    }
-
-
-    .photo-card {
-
-        width: min(430px, 80%);
-    }
 }
 
 
@@ -537,17 +432,22 @@ img {
 
 @media (max-width: 600px) {
 
+
+    /* Navigation */
+
     .nav-container {
+
+        width: 90%;
 
         min-height: 68px;
 
-        width: 90%;
     }
 
 
     .nav-links {
 
         display: none;
+
     }
 
 
@@ -556,12 +456,16 @@ img {
         padding: 8px 15px;
 
         font-size: 12px;
+
     }
 
+
+    /* Hero */
 
     .hero {
 
         padding-top: 68px;
+
     }
 
 
@@ -569,11 +473,10 @@ img {
 
         width: 90%;
 
-        min-height: auto;
+        min-height: calc(100vh - 68px);
 
-        padding: 75px 0;
+        padding: 70px 0;
 
-        gap: 50px;
     }
 
 
@@ -581,80 +484,61 @@ img {
 
         font-size: 24px;
 
-        margin-bottom: 16px;
+        margin-bottom: 18px;
+
     }
 
 
     .hero h1 {
 
-        font-size: 42px;
+        font-size: 44px;
 
-        line-height: 1.04;
+        line-height: 1.02;
 
-        letter-spacing: -2.2px;
+        letter-spacing: -2.5px;
+
     }
 
 
     .hero-description {
 
-        margin-top: 25px;
+        margin-top: 28px;
 
         font-size: 14px;
 
         line-height: 1.75;
+
     }
 
 
-    .hero-visual {
+    .hero-actions {
 
-        justify-content: flex-start;
+        margin-top: 32px;
+
     }
 
 
-    .photo-card {
+    .primary-button {
 
-        width: 100%;
+        padding: 12px 20px;
 
-        max-width: 420px;
+        font-size: 12px;
+
     }
 
 
-    .work-section,
-    .contact-section {
-
-        padding: 100px 0;
-    }
-
-
-    .section-label {
-
-        margin-bottom: 45px;
-    }
-
-
-    .work-intro h2,
-    .contact-content h2 {
-
-        font-size: 42px;
-
-        letter-spacing: -2px;
-    }
-
-
-    .work-intro p {
-
-        font-size: 14px;
-
-        margin-top: 25px;
-    }
-
+    /* Footer */
 
     .footer {
 
         width: 90%;
 
+        padding: 22px 0;
+
         flex-direction: column;
 
-        gap: 8px;
+        gap: 6px;
+
     }
+
 }
