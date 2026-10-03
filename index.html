@@ -14,16 +14,21 @@
         content="Sarang Ram — Social Media Marketer and Digital Marketing Executive."
     >
 
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
     <!-- Google Fonts -->
-     <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
 
     <link
         href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Sora:wght@400;500;600&display=swap"
         rel="stylesheet"
-       
     >
 
     <!-- CSS -->
@@ -31,11 +36,7 @@
 
 </head>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        lucide.createIcons();
-    });
-</script>
+
 <body>
 
 
@@ -43,49 +44,39 @@
          NAVIGATION
     ====================================================== -->
 
-<header class="navbar">
+    <header class="navbar">
 
-    <div class="nav-container">
+        <div class="nav-container">
 
-        <a href="#home" class="logo">
-        </a>
-
-       <nav class="nav-links">
-
-    <a href="#home">
-        Home
-    </a>
-
-    <a href="#about">
-        About
-    </a>
-
-    <a href="#services">
-        Services
-    </a>
-
-    <a href="#contact">
-        Contact
-    </a>
-
-</nav>
-
-        <a href="#contact" class="nav-button">
-            Let's Talk
-        </a>
-
-    </div>
-
-</header>
-</nav>
+            <!-- Logo -->
+            <a href="#home" class="logo">
+            </a>
 
 
-            <!-- Contact Button -->
+            <!-- Navigation -->
+            <nav class="nav-links">
 
-            <a
-                href="mailto:your@email.com"
-                class="nav-button"
-            >
+                <a href="#home">
+                    Home
+                </a>
+
+                <a href="#about">
+                    About
+                </a>
+
+                <a href="#services">
+                    Services
+                </a>
+
+                <a href="#contact">
+                    Contact
+                </a>
+
+            </nav>
+
+
+            <!-- Let's Talk -->
+            <a href="#contact" class="nav-button">
                 Let's Talk
             </a>
 
@@ -96,20 +87,21 @@
 
 
     <!-- =====================================================
-         HOME
+         MAIN CONTENT
     ====================================================== -->
 
     <main>
+
+
+        <!-- =====================================================
+             HOME
+        ====================================================== -->
 
         <section class="hero" id="home">
 
             <div class="hero-container">
 
-
-                <!-- Hero Content -->
-
                 <div class="hero-content">
-
 
                     <p class="hero-greeting">
                         Hi, I'm Sarang.
@@ -130,16 +122,288 @@
                     </p>
 
 
-                    <!-- Hero Actions -->
-
                     <div class="hero-actions">
 
                         <a
-                            href="mailto:your@email.com"
+                            href="#contact"
                             class="primary-button"
                         >
                             Let's Talk
                         </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- SECTION DIVIDER -->
+
+        <div class="section-divider"></div>
+
+
+
+        <!-- =====================================================
+             SERVICES
+        ====================================================== -->
+
+        <section class="services-section" id="services">
+
+            <div class="services-container">
+
+
+                <!-- Services Grid -->
+
+                <div class="services-grid">
+
+
+                    <!-- =================================================
+                         01 — SOCIAL MEDIA MANAGEMENT
+                    ================================================== -->
+
+                    <div class="service-item">
+
+                        <div class="service-icon icon-social">
+                            <i data-lucide="share-2"></i>
+                        </div>
+
+                        <div class="service-content">
+
+                            <span class="service-number">
+                                01
+                            </span>
+
+                            <h3>
+                                Social Media Management
+                            </h3>
+
+                            <p>
+                                Content planning, scheduling, publishing
+                                and day-to-day social media management.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                         02 — CONTENT CREATION
+                    ================================================== -->
+
+                    <div class="service-item">
+
+                        <div class="service-icon icon-content">
+                            <i data-lucide="sparkles"></i>
+                        </div>
+
+                        <div class="service-content">
+
+                            <span class="service-number">
+                                02
+                            </span>
+
+                            <h3>
+                                Content Creation
+                            </h3>
+
+                            <p>
+                                Creative concepts, captions, campaigns
+                                and visual content tailored to brands.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                         03 — SHORT-FORM VIDEO
+                    ================================================== -->
+
+                    <div class="service-item">
+
+                        <div class="service-icon icon-video">
+                            <i data-lucide="play-circle"></i>
+                        </div>
+
+                        <div class="service-content">
+
+                            <span class="service-number">
+                                03
+                            </span>
+
+                            <h3>
+                                Short-Form Video Content
+                            </h3>
+
+                            <p>
+                                Reels, short-form videos, motion-based
+                                content and engaging social media formats.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                         04 — PAID ADVERTISING
+                    ================================================== -->
+
+                    <div class="service-item">
+
+                        <div class="service-icon icon-ads">
+                            <i data-lucide="chart-no-axes-combined"></i>
+                        </div>
+
+                        <div class="service-content">
+
+                            <span class="service-number">
+                                04
+                            </span>
+
+                            <h3>
+                                Paid Advertising
+                            </h3>
+
+                            <p>
+                                Meta Ads campaigns focused on reach,
+                                engagement, leads and conversions.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                         05 — CONTENT STRATEGY
+                    ================================================== -->
+
+                    <div class="service-item">
+
+                        <div class="service-icon icon-strategy">
+                            <i data-lucide="target"></i>
+                        </div>
+
+                        <div class="service-content">
+
+                            <span class="service-number">
+                                05
+                            </span>
+
+                            <h3>
+                                Content Strategy
+                            </h3>
+
+                            <p>
+                                Developing content pillars, campaigns
+                                and strategies aligned with brand goals.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                         06 — DIGITAL MARKETING
+                    ================================================== -->
+
+                    <div class="service-item">
+
+                        <div class="service-icon icon-digital">
+                            <i data-lucide="globe"></i>
+                        </div>
+
+                        <div class="service-content">
+
+                            <span class="service-number">
+                                06
+                            </span>
+
+                            <h3>
+                                Digital Marketing
+                            </h3>
+
+                            <p>
+                                Building and executing digital marketing
+                                activities across relevant online channels.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                         07 — COPYWRITING
+                    ================================================== -->
+
+                    <div class="service-item">
+
+                        <div class="service-icon icon-copy">
+                            <i data-lucide="pen-line"></i>
+                        </div>
+
+                        <div class="service-content">
+
+                            <span class="service-number">
+                                07
+                            </span>
+
+                            <h3>
+                                Copywriting
+                            </h3>
+
+                            <p>
+                                Social media captions, ad copy, hooks,
+                                headlines and promotional content.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                         08 — BRAND & CAMPAIGN IDEAS
+                    ================================================== -->
+
+                    <div class="service-item">
+
+                        <div class="service-icon icon-ideas">
+                            <i data-lucide="lightbulb"></i>
+                        </div>
+
+                        <div class="service-content">
+
+                            <span class="service-number">
+                                08
+                            </span>
+
+                            <h3>
+                                Brand & Campaign Ideas
+                            </h3>
+
+                            <p>
+                                Creative campaign concepts and promotional
+                                ideas for launches, offers and events.
+                            </p>
+
+                        </div>
 
                     </div>
 
@@ -149,500 +413,252 @@
             </div>
 
         </section>
+
+
+
+        <!-- SECTION DIVIDER -->
+
+        <div class="section-divider"></div>
+
+
+
         <!-- =====================================================
-     SERVICES
-====================================================== -->
+             ABOUT ME
+        ====================================================== -->
 
-<section class="services-section" id="services">
+        <section class="about-section" id="about">
 
-    <div class="services-container">
-
-        <div class="services-grid">
-
-            <!-- Service 01 -->
-            <div class="service-item">
-                ...
-            </div>
-
-            <!-- Service 02 -->
-            <div class="service-item">
-                ...
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-        <!-- Section Label -->
+            <div class="about-container">
 
 
-        <!-- Section Heading -->
-
-       <div class="services-header">
-
-    <h2>
-        Services
-    </h2>
-
-</div>
-        <div class="service-icon icon-social">
-    <i data-lucide="share-2"></i>
-</div>
-
-
-        <!-- Services Grid -->
-
-        <div class="services-grid">
-
-
-            <!-- =================================================
-                 01 — SOCIAL MEDIA MANAGEMENT
-            ================================================== -->
-
-            <div class="service-item">
-
-                <div class="service-icon icon-social">
-                    <i data-lucide="share-2"></i>
+                <div class="about-label">
+                    ABOUT ME
                 </div>
 
-                <div class="service-content">
 
-                    <span class="service-number">
-                        01
-                    </span>
-
-                    <h3>
-                        Social Media Management
-                    </h3>
-
-                    <p>
-                        Content planning, scheduling, publishing
-                        and day-to-day social media management.
-                    </p>
-
-                </div>
-
-            </div>
+                <div class="about-grid">
 
 
-            <!-- =================================================
-                 02 — CONTENT CREATION
-            ================================================== -->
+                    <!-- LEFT: ABOUT TEXT -->
 
-            <div class="service-item">
+                    <div class="about-content">
 
-                <div class="service-icon icon-content">
-                    <i data-lucide="sparkles"></i>
-                </div>
+                        <h2>
+                            A little<br>
+                            about me.
+                        </h2>
 
-                <div class="service-content">
 
-                    <span class="service-number">
-                        02
-                    </span>
+                        <p>
+                            I'm Sarang, a digital marketing professional
+                            from Kerala, India, with a passion for social
+                            media, content and creative marketing.
+                        </p>
 
-                    <h3>
-                        Content Creation
-                    </h3>
 
-                    <p>
-                        Creative concepts, captions, campaigns
-                        and visual content tailored to brands.
-                    </p>
+                        <p>
+                            I enjoy turning ideas into content that feels
+                            relevant, engaging and true to a brand.
+                        </p>
+
+
+                        <p>
+                            I'm always curious to learn, experiment and
+                            explore new ways of doing things.
+                        </p>
+
+
+                        <p>
+                            Outside of marketing, I enjoy photography,
+                            travelling and discovering new places.
+                        </p>
+
+
+                        <p>
+                            I'm currently focused on growing my skills
+                            and building meaningful work through
+                            creativity and strategy.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- RIGHT: PHOTO -->
+
+                    <div class="about-photo">
+
+                        <div class="about-photo-card">
+
+                            <img
+                                src="images/sarang-photo.jpg"
+                                alt="Sarang Ram"
+                            >
+
+                        </div>
+
+                    </div>
+
 
                 </div>
 
             </div>
 
+        </section>
 
-            <!-- =================================================
-                 03 — SHORT-FORM VIDEO
-            ================================================== -->
 
-            <div class="service-item">
 
-                <div class="service-icon icon-video">
-                    <i data-lucide="play-circle"></i>
-                </div>
+        <!-- SECTION DIVIDER -->
 
-                <div class="service-content">
+        <div class="section-divider"></div>
 
-                    <span class="service-number">
-                        03
-                    </span>
 
-                    <h3>
-                        Short-Form Video Content
-                    </h3>
 
-                    <p>
-                        Reels, short-form videos, motion-based
-                        content and engaging social media formats.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <!-- =================================================
-                 04 — PAID ADVERTISING
-            ================================================== -->
-
-            <div class="service-item">
-
-                <div class="service-icon icon-ads">
-                    <i data-lucide="chart-no-axes-combined"></i>
-                </div>
-
-                <div class="service-content">
-
-                    <span class="service-number">
-                        04
-                    </span>
-
-                    <h3>
-                        Paid Advertising
-                    </h3>
-
-                    <p>
-                        Meta Ads campaigns focused on reach,
-                        engagement, leads and conversions.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <!-- =================================================
-                 05 — CONTENT STRATEGY
-            ================================================== -->
-
-            <div class="service-item">
-
-                <div class="service-icon icon-strategy">
-                    <i data-lucide="target"></i>
-                </div>
-
-                <div class="service-content">
-
-                    <span class="service-number">
-                        05
-                    </span>
-
-                    <h3>
-                        Content Strategy
-                    </h3>
-
-                    <p>
-                        Developing content pillars, campaigns
-                        and strategies aligned with brand goals.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <!-- =================================================
-                 06 — DIGITAL MARKETING
-            ================================================== -->
-
-            <div class="service-item">
-
-                <div class="service-icon icon-digital">
-                    <i data-lucide="globe"></i>
-                </div>
-
-                <div class="service-content">
-
-                    <span class="service-number">
-                        06
-                    </span>
-
-                    <h3>
-                        Digital Marketing
-                    </h3>
-
-                    <p>
-                        Building and executing digital marketing
-                        activities across relevant online channels.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <!-- =================================================
-                 07 — COPYWRITING
-            ================================================== -->
-
-            <div class="service-item">
-
-                <div class="service-icon icon-copy">
-                    <i data-lucide="pen-line"></i>
-                </div>
-
-                <div class="service-content">
-
-                    <span class="service-number">
-                        07
-                    </span>
-
-                    <h3>
-                        Copywriting
-                    </h3>
-
-                    <p>
-                        Social media captions, ad copy, hooks,
-                        headlines and promotional content.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <!-- =================================================
-                 08 — BRAND & CAMPAIGN IDEAS
-            ================================================== -->
-
-            <div class="service-item">
-
-                <div class="service-icon icon-ideas">
-                    <i data-lucide="lightbulb"></i>
-                </div>
-
-                <div class="service-content">
-
-                    <span class="service-number">
-                        08
-                    </span>
-
-                    <h3>
-                        Brand & Campaign Ideas
-                    </h3>
-
-                    <p>
-                        Creative campaign concepts and promotional
-                        ideas for launches, offers and events.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-        </div>
-
-    </div>
-
-</section>
-
-<div class="section-divider"></div>
-     
         <!-- =====================================================
-     ABOUT ME
-====================================================== -->
+             CONTACT
+        ====================================================== -->
 
-<div class="page-separator"></div>
+        <section class="contact-section" id="contact">
 
-<section class="about-section" id="about">
-
-    <div class="about-container">
-
-        <div class="about-label">
-            ABOUT ME
-        </div>
-
-        <div class="about-grid">
-
-            <!-- LEFT: ABOUT TEXT -->
-
-            <div class="about-content">
-
-                <h2>
-                    A little<br>
-                    about me.
-                </h2>
-
-                <p>
-                    I'm Sarang, a digital marketing professional
-                    from Kerala, India, with a passion for social
-                    media, content and creative marketing.
-                </p>
-
-                <p>
-                    I enjoy turning ideas into content that feels
-                    relevant, engaging and true to a brand.
-                </p>
-
-                <p>
-                    I'm always curious to learn, experiment and
-                    explore new ways of doing things.
-                </p>
-
-                <p>
-                    Outside of marketing, I enjoy photography,
-                    travelling and discovering new places.
-                </p>
-
-                <p>
-                    I'm currently focused on growing my skills
-                    and building meaningful work through
-                    creativity and strategy.
-                </p>
-
-            </div>
+            <div class="contact-container">
 
 
-            <!-- RIGHT: PHOTO -->
-
-            <div class="about-photo">
-
-                <div class="about-photo-card">
-
-                    <img
-                        src="images/sarang-photo.jpg"
-                        alt="Sarang Ram"
-                    >
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-       
-<!-- =====================================================
-     CONTACT
-====================================================== -->
-
-<section class="contact-section" id="contact">
-
-    <div class="contact-container">
-
-        <div class="contact-label">
-            CONTACT
-        </div>
-
-        <div class="contact-main">
-
-            <div class="contact-heading">
-
-                <h2>
-                    Let's work<br>
-                    together.
-                </h2>
-
-            </div>
-
-            <div class="contact-info">
-
-                <p class="contact-intro">
-                    Have a project, opportunity, or just want
-                    to say hello?
-                </p>
-
-
-                <!-- EMAIL -->
-
-                <div class="contact-block">
-
-                    <span class="contact-block-label">
-                        EMAIL
-                    </span>
-
-                    <a
-                        href="mailto:sarangramm03@gmail.com"
-                        class="contact-link"
-                    >
-                        sarangramm03@gmail.com
-                    </a>
-
+                <div class="contact-label">
+                    CONTACT
                 </div>
 
 
-                <!-- SOCIAL -->
+                <div class="contact-main">
 
-                <div class="contact-block">
 
-                    <span class="contact-block-label">
-                        SOCIAL
-                    </span>
+                    <!-- CONTACT HEADING -->
 
-                    <div class="social-links">
+                    <div class="contact-heading">
 
-                        <a
-                            href="https://www.linkedin.com/in/sarangramm"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            LinkedIn
-                            <span>↗</span>
-                        </a>
+                        <h2>
+                            Let's work<br>
+                            together.
+                        </h2>
 
-                        <a
-                            href="https://www.instagram.com/ram__sarang/?hl=en"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Instagram
-                            <span>↗</span>
-                        </a>
+                    </div>
+
+
+
+                    <!-- CONTACT INFORMATION -->
+
+                    <div class="contact-info">
+
+
+                        <p class="contact-intro">
+                            Have a project, opportunity, or just want
+                            to say hello?
+                        </p>
+
+
+
+                        <!-- EMAIL -->
+
+                        <div class="contact-block">
+
+                            <span class="contact-block-label">
+                                EMAIL
+                            </span>
+
+                            <a
+                                href="mailto:sarangramm03@gmail.com"
+                                class="contact-link"
+                            >
+                                sarangramm03@gmail.com
+                            </a>
+
+                        </div>
+
+
+
+                        <!-- SOCIAL -->
+
+                        <div class="contact-block">
+
+                            <span class="contact-block-label">
+                                SOCIAL
+                            </span>
+
+
+                            <div class="social-links">
+
+                                <a
+                                    href="https://www.linkedin.com/in/sarangramm"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    LinkedIn
+                                    <span>↗</span>
+                                </a>
+
+
+                                <a
+                                    href="https://www.instagram.com/ram__sarang/?hl=en"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Instagram
+                                    <span>↗</span>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- WHATSAPP -->
+
+                        <div class="contact-block">
+
+                            <span class="contact-block-label">
+                                GET IN TOUCH
+                            </span>
+
+
+                            <a
+                                href="https://wa.me/917356359793?text=Hi%20Sarang%2C%20I%20came%20across%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project."
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="whatsapp-button"
+                            >
+
+                                <span class="whatsapp-icon">
+                                    ☎
+                                </span>
+
+                                WhatsApp
+
+                                <span>↗</span>
+
+                            </a>
+
+                        </div>
+
 
                     </div>
 
                 </div>
 
-
-                <!-- WHATSAPP -->
-
-                <div class="contact-block">
-
-                    <span class="contact-block-label">
-                        GET IN TOUCH
-                    </span>
-
-                    <a
-                        href="https://wa.me/917356359793?text=Hi%20Sarang%2C%20I%20came%20across%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project."
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="whatsapp-button"
-                    >
-
-                        <span class="whatsapp-icon">
-                            ☎
-                        </span>
-
-                        WhatsApp
-
-                        <span>↗</span>
-
-                    </a>
-
-                </div>
-
             </div>
 
-        </div>
+        </section>
 
-    </div>
 
-</section>
     </main>
+
 
 
     <!-- =====================================================
          FOOTER
     ====================================================== -->
+
+    <div class="section-divider"></div>
+
 
     <footer class="footer">
 
@@ -655,6 +671,22 @@
         </p>
 
     </footer>
+
+
+
+    <!-- =====================================================
+         LUCIDE ICON INITIALIZATION
+    ====================================================== -->
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+            lucide.createIcons();
+
+        });
+
+    </script>
 
 
 </body>
