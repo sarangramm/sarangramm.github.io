@@ -1,11 +1,5 @@
 /* =====================================================
    SARANG RAM M — MINIMAL PORTFOLIO
-   Monochrome / Futuristic / Editorial
-===================================================== */
-
-
-/* =====================================================
-   VARIABLES
 ===================================================== */
 
 :root {
@@ -19,7 +13,7 @@
     --font-primary: "Space Grotesk", sans-serif;
     --font-secondary: "Sora", sans-serif;
 
-    --page-width: 1200px;
+    --max-width: 1200px;
 }
 
 
@@ -57,20 +51,6 @@ img {
 
 
 /* =====================================================
-   SHARED PAGE WIDTH
-===================================================== */
-
-.nav-container,
-.hero-container,
-.metrics-container {
-    width: 92%;
-    max-width: var(--page-width);
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-/* =====================================================
    NAVIGATION
 ===================================================== */
 
@@ -83,19 +63,24 @@ img {
 
     z-index: 1000;
 
-    background: rgba(255, 255, 255, 0.94);
+    background: rgba(255, 255, 255, 0.92);
 
     border-bottom: 1px solid var(--light-grey);
 
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
+    backdrop-filter: blur(12px);
 }
 
 .nav-container {
+    width: min(92%, var(--max-width));
+
     min-height: 76px;
 
+    margin: 0 auto;
+
     display: flex;
+
     align-items: center;
+
     justify-content: space-between;
 }
 
@@ -103,19 +88,23 @@ img {
 /* Logo */
 
 .logo {
-    color: var(--black);
-
     font-size: 24px;
+
     font-weight: 700;
 
     letter-spacing: -1px;
 }
 
+.logo span {
+    color: var(--black);
+}
 
-/* Navigation links */
+
+/* Navigation Links */
 
 .nav-links {
     display: flex;
+
     align-items: center;
 
     gap: 32px;
@@ -125,9 +114,8 @@ img {
     color: var(--grey);
 
     font-size: 14px;
-    font-weight: 500;
 
-    transition: color 0.25s ease;
+    transition: 0.25s ease;
 }
 
 .nav-links a:hover,
@@ -136,26 +124,23 @@ img {
 }
 
 
-/* Navigation button */
+/* Navigation Button */
 
 .nav-button {
     padding: 9px 17px;
 
-    color: var(--black);
-
     border: 1px solid var(--black);
+
     border-radius: 50px;
 
     font-size: 13px;
-    font-weight: 500;
 
-    transition:
-        background 0.25s ease,
-        color 0.25s ease;
+    transition: 0.25s ease;
 }
 
 .nav-button:hover {
     background: var(--black);
+
     color: var(--white);
 }
 
@@ -167,22 +152,27 @@ img {
 .hero {
     min-height: 100vh;
 
-    padding-top: 150px;
-    padding-bottom: 100px;
+    padding: 150px 0 100px;
 
     background: var(--white);
 }
 
 .hero-container {
+    width: min(92%, var(--max-width));
+
     min-height: 72vh;
+
+    margin: 0 auto;
+
+    padding: 60px 0;
 
     display: grid;
 
-    grid-template-columns: minmax(0, 1fr) minmax(360px, 0.82fr);
+    grid-template-columns: 1fr 0.85fr;
 
     align-items: center;
 
-    gap: 80px;
+    gap: 90px;
 }
 
 
@@ -191,7 +181,7 @@ img {
 ===================================================== */
 
 .hero-content {
-    max-width: 720px;
+    max-width: 700px;
 }
 
 .hero-greeting {
@@ -199,28 +189,25 @@ img {
 
     color: var(--black);
 
-    font-family: var(--font-secondary);
+    font-size: 30px;
 
-    font-size: 24px;
     font-weight: 500;
 
-    letter-spacing: -0.5px;
+    letter-spacing: -1px;
 }
 
 .hero h1 {
-    max-width: 720px;
+    max-width: 700px;
 
     color: var(--black);
 
-    font-family: var(--font-primary);
+    font-size: clamp(40px, 5vw, 68px);
 
-    font-size: clamp(42px, 5vw, 64px);
+    line-height: 1.04;
 
-    line-height: 1.05;
+    letter-spacing: -3px;
 
-    letter-spacing: -2.8px;
-
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .hero-description {
@@ -229,8 +216,6 @@ img {
     margin-top: 30px;
 
     color: var(--grey);
-
-    font-family: var(--font-primary);
 
     font-size: 17px;
 
@@ -245,32 +230,33 @@ img {
 .hero-visual {
     display: flex;
 
-    align-items: center;
     justify-content: flex-end;
+
+    align-items: center;
 }
 
 .photo-card {
-    width: 100%;
-    max-width: 430px;
+    width: min(430px, 100%);
 
     aspect-ratio: 4 / 5;
 
     overflow: hidden;
 
-    background: var(--light-grey);
+    border-radius: 4px;
 
-    border-radius: 6px;
+    background: var(--light-grey);
 }
 
 .photo-card img {
     width: 100%;
+
     height: 100%;
 
     object-fit: cover;
 
     filter: grayscale(100%);
 
-    transition: filter 0.5s ease;
+    transition: 0.5s ease;
 }
 
 .photo-card:hover img {
@@ -283,17 +269,22 @@ img {
 ===================================================== */
 
 .quick-metrics {
-    padding-bottom: 100px;
+    padding: 0 0 100px;
 
     background: var(--white);
 }
 
 .metrics-container {
+    width: min(92%, var(--max-width));
+
+    margin: 0 auto;
+
     display: grid;
 
     grid-template-columns: repeat(4, 1fr);
 
     border-top: 1px solid var(--light-grey);
+
     border-bottom: 1px solid var(--light-grey);
 }
 
@@ -314,12 +305,9 @@ img {
 
     color: var(--black);
 
-    font-family: var(--font-secondary);
-
     font-size: 30px;
-    font-weight: 600;
 
-    letter-spacing: -1px;
+    font-weight: 600;
 }
 
 .metric span {
@@ -330,242 +318,32 @@ img {
 
 
 /* =====================================================
-   TABLET
-===================================================== */
-
-@media (max-width: 850px) {
-
-    .nav-links {
-        display: none;
-    }
-
-    .nav-button {
-        display: block;
-    }
-
-    .hero {
-        padding-top: 125px;
-    }
-
-    .hero-container {
-        grid-template-columns: 1fr;
-
-        gap: 60px;
-    }
-
-    .hero-visual {
-        justify-content: flex-start;
-    }
-
-    .photo-card {
-        width: min(380px, 85vw);
-    }
-
-    .metrics-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .metric:nth-child(2) {
-        border-right: none;
-    }
-
-    .metric:nth-child(-n + 2) {
-        border-bottom: 1px solid var(--light-grey);
-    }
-}
-
-
-/* =====================================================
-   MOBILE
-===================================================== */
-
-@media (max-width: 520px) {
-
-    .nav-container,
-    .hero-container,
-    .metrics-container {
-        width: 88%;
-    }
-
-    .nav-container {
-        min-height: 68px;
-    }
-
-    .logo {
-        font-size: 21px;
-    }
-
-    .nav-button {
-        padding: 8px 14px;
-
-        font-size: 12px;
-    }
-
-    .hero {
-        padding-top: 110px;
-        padding-bottom: 70px;
-    }
-
-    .hero-greeting {
-        margin-bottom: 14px;
-
-        font-size: 21px;
-    }
-
-    .hero h1 {
-        font-size: 40px;
-
-        line-height: 1.07;
-
-        letter-spacing: -2px;
-    }
-
-    .hero-description {
-        margin-top: 24px;
-
-        font-size: 15px;
-
-        line-height: 1.7;
-    }
-
-    .photo-card {
-        width: 100%;
-        max-width: none;
-    }
-
-    .metrics-container {
-        grid-template-columns: 1fr;
-    }
-
-    .metric {
-        border-right: none;
-
-        border-bottom: 1px solid var(--light-grey);
-    }
-
-    .metric:last-child {
-        border-bottom: none;
-    }
-}
-/* =====================================================
-   ABOUT
-===================================================== */
-
-.about {
-    padding: 140px 0;
-    background: var(--off-white);
-    border-top: 1px solid var(--light-grey);
-}
-
-.about-container {
-    width: 92%;
-    max-width: var(--page-width);
-    margin: 0 auto;
-
-    display: grid;
-    grid-template-columns: 0.25fr 1fr;
-    gap: 80px;
-}
-
-.about-label {
-    color: var(--grey);
-
-    font-size: 13px;
-    font-weight: 500;
-
-    letter-spacing: 2px;
-}
-
-.about-content {
-    max-width: 850px;
-}
-
-.about-content h2 {
-    color: var(--black);
-
-    font-family: var(--font-secondary);
-
-    font-size: clamp(38px, 5vw, 64px);
-
-    line-height: 1.1;
-
-    letter-spacing: -2.5px;
-
-    font-weight: 500;
-}
-
-.about-content p {
-    max-width: 650px;
-
-    margin-top: 40px;
-
-    color: var(--grey);
-
-    font-size: 18px;
-
-    line-height: 1.8;
-}
-
-
-/* =====================================================
-   ABOUT — MOBILE
-===================================================== */
-
-@media (max-width: 850px) {
-
-    .about {
-        padding: 100px 0;
-    }
-
-    .about-container {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-
-    .about-content h2 {
-        font-size: 42px;
-    }
-}
-
-
-@media (max-width: 520px) {
-
-    .about {
-        padding: 80px 0;
-    }
-
-    .about-container {
-        width: 88%;
-    }
-
-    .about-content h2 {
-        font-size: 36px;
-        letter-spacing: -1.5px;
-    }
-
-    .about-content p {
-        margin-top: 28px;
-        font-size: 16px;
-    }
-}
-/* =====================================================
    EXPERIENCE & EDUCATION
 ===================================================== */
 
 .experience-education {
+    width: 100%;
+
     padding: 140px 0 160px;
+
     background: var(--white);
+
     border-top: 1px solid var(--light-grey);
 }
 
+
+/* Main centered container */
+
 .experience-education-container {
-    width: 92%;
-    max-width: var(--page-width);
+    width: min(92%, var(--max-width));
+
+    max-width: var(--max-width);
+
     margin: 0 auto;
 }
 
 
-/* Section Label */
+/* Section label */
 
 .section-label {
     margin-bottom: 80px;
@@ -573,26 +351,34 @@ img {
     color: var(--grey);
 
     font-size: 13px;
+
     font-weight: 500;
 
     letter-spacing: 2px;
+
     text-transform: uppercase;
 }
 
 
 /* =====================================================
-   TWO COLUMN LAYOUT
+   EXPERIENCE + EDUCATION COLUMNS
 ===================================================== */
 
 .resume-columns {
+    width: 100%;
+
     display: grid;
 
     grid-template-columns: 1fr 1fr;
 
     gap: 80px;
+
+    align-items: start;
 }
 
 .resume-column {
+    width: 100%;
+
     min-width: 0;
 }
 
@@ -609,6 +395,7 @@ img {
     font-family: var(--font-secondary);
 
     font-size: 32px;
+
     font-weight: 500;
 
     line-height: 1.2;
@@ -622,6 +409,8 @@ img {
 ===================================================== */
 
 .resume-item {
+    width: 100%;
+
     padding: 30px 0;
 
     border-top: 1px solid var(--light-grey);
@@ -652,6 +441,8 @@ img {
 ===================================================== */
 
 .resume-title-row {
+    width: 100%;
+
     display: flex;
 
     align-items: flex-start;
@@ -663,11 +454,13 @@ img {
 
 
 /* =====================================================
-   CONTENT
+   RESUME CONTENT
 ===================================================== */
 
 .resume-content {
     flex: 1;
+
+    min-width: 0;
 }
 
 .resume-content h3 {
@@ -676,6 +469,7 @@ img {
     color: var(--black);
 
     font-size: 20px;
+
     font-weight: 600;
 
     line-height: 1.3;
@@ -691,8 +485,11 @@ img {
     line-height: 1.6;
 }
 
+
+/* Education degree */
+
 .degree-name {
-    margin-bottom: 4px;
+    margin-bottom: 6px;
 }
 
 
@@ -701,14 +498,16 @@ img {
 ===================================================== */
 
 .company-logo {
-    width: 70px;
-    height: 50px;
+    width: 76px;
+
+    height: 56px;
 
     flex-shrink: 0;
 
     display: flex;
 
     align-items: center;
+
     justify-content: center;
 
     border: 1px solid var(--light-grey);
@@ -722,11 +521,12 @@ img {
 
 .company-logo img {
     width: 100%;
+
     height: 100%;
 
-    object-fit: contain;
-
     padding: 8px;
+
+    object-fit: contain;
 }
 
 
@@ -735,6 +535,53 @@ img {
 ===================================================== */
 
 @media (max-width: 850px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-button {
+        display: block;
+    }
+
+
+    /* Hero */
+
+    .hero {
+        padding-top: 125px;
+    }
+
+    .hero-container {
+        grid-template-columns: 1fr;
+
+        gap: 55px;
+    }
+
+    .hero-visual {
+        justify-content: flex-start;
+    }
+
+    .photo-card {
+        width: min(380px, 85%);
+    }
+
+
+    /* Metrics */
+
+    .metrics-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .metric:nth-child(2) {
+        border-right: none;
+    }
+
+    .metric:nth-child(-n + 2) {
+        border-bottom: 1px solid var(--light-grey);
+    }
+
+
+    /* Experience & Education */
 
     .experience-education {
         padding: 110px 0;
@@ -751,7 +598,7 @@ img {
     .resume-columns {
         grid-template-columns: 1fr;
 
-        gap: 90px;
+        gap: 80px;
     }
 
     .resume-heading {
@@ -762,22 +609,110 @@ img {
 }
 
 
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
 @media (max-width: 520px) {
+
+    .nav-container {
+        min-height: 68px;
+    }
+
+    .nav-button {
+        padding: 8px 14px;
+
+        font-size: 12px;
+    }
+
+
+    /* Hero */
+
+    .hero {
+        padding-top: 110px;
+
+        padding-bottom: 70px;
+    }
+
+    .hero-greeting {
+        font-size: 24px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+
+        letter-spacing: -2px;
+    }
+
+    .hero-description {
+        font-size: 15px;
+    }
+
+    .photo-card {
+        width: 100%;
+    }
+
+
+    /* Metrics */
+
+    .metrics-container {
+        grid-template-columns: 1fr;
+    }
+
+    .metric {
+        border-right: none;
+
+        border-bottom: 1px solid var(--light-grey);
+    }
+
+    .metric:last-child {
+        border-bottom: none;
+    }
+
+
+    /* Experience & Education */
+
+    .experience-education {
+        padding: 90px 0 110px;
+    }
 
     .experience-education-container {
         width: 88%;
     }
 
+    .section-label {
+        margin-bottom: 45px;
+
+        font-size: 11px;
+    }
+
+    .resume-columns {
+        gap: 65px;
+    }
+
+    .resume-heading {
+        font-size: 26px;
+    }
+
+    .resume-item {
+        padding: 25px 0;
+    }
+
     .resume-title-row {
-        gap: 18px;
+        gap: 15px;
     }
 
     .resume-content h3 {
-        font-size: 19px;
+        font-size: 18px;
+    }
+
+    .resume-content p {
+        font-size: 14px;
     }
 
     .company-logo {
-        width: 60px;
-        height: 45px;
+        width: 64px;
+
+        height: 48px;
     }
 }
