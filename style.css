@@ -161,6 +161,12 @@ a {
 
     letter-spacing: 2px;
 }
+.hero-greeting {
+    margin-bottom: 14px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+}
 
 .hero h1 {
     max-width: 720px;
