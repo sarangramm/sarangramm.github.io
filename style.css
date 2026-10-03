@@ -553,31 +553,29 @@ img {
 ===================================================== */
 
 .experience-education {
-    padding: 150px 0;
-
+    padding: 140px 0 160px;
     background: var(--white);
-
     border-top: 1px solid var(--light-grey);
 }
 
 .experience-education-container {
-    width: calc(100% - 200px);
-    max-width: 1400px;
-
+    width: 92%;
+    max-width: var(--page-width);
     margin: 0 auto;
 }
 
+
+/* Section Label */
+
 .section-label {
-    margin-bottom: 90px;
+    margin-bottom: 80px;
 
     color: var(--grey);
 
     font-size: 13px;
-
     font-weight: 500;
 
     letter-spacing: 2px;
-
     text-transform: uppercase;
 }
 
@@ -600,19 +598,20 @@ img {
 
 
 /* =====================================================
-   HEADINGS
+   COLUMN HEADINGS
 ===================================================== */
 
 .resume-heading {
-    margin-bottom: 45px;
+    margin-bottom: 40px;
 
     color: var(--black);
 
     font-family: var(--font-secondary);
 
     font-size: 32px;
-
     font-weight: 500;
+
+    line-height: 1.2;
 
     letter-spacing: -1px;
 }
@@ -623,7 +622,7 @@ img {
 ===================================================== */
 
 .resume-item {
-    padding: 32px 0;
+    padding: 30px 0;
 
     border-top: 1px solid var(--light-grey);
 }
@@ -632,8 +631,13 @@ img {
     border-bottom: 1px solid var(--light-grey);
 }
 
+
+/* =====================================================
+   DATE
+===================================================== */
+
 .resume-date {
-    margin-bottom: 18px;
+    margin-bottom: 20px;
 
     color: var(--grey);
 
@@ -644,38 +648,7 @@ img {
 
 
 /* =====================================================
-   RESUME CONTENT
-===================================================== */
-
-.resume-content h3 {
-    margin-bottom: 8px;
-
-    color: var(--black);
-
-    font-size: 21px;
-
-    font-weight: 600;
-
-    line-height: 1.3;
-
-    letter-spacing: -0.5px;
-}
-
-.resume-content p {
-    color: var(--grey);
-
-    font-size: 15px;
-
-    line-height: 1.6;
-}
-
-.degree-name {
-    margin-bottom: 3px;
-}
-
-
-/* =====================================================
-   COMPANY / LOGO ROW
+   TITLE + LOGO
 ===================================================== */
 
 .resume-title-row {
@@ -689,11 +662,46 @@ img {
 }
 
 
-/* Temporary logo placeholder */
+/* =====================================================
+   CONTENT
+===================================================== */
+
+.resume-content {
+    flex: 1;
+}
+
+.resume-content h3 {
+    margin-bottom: 8px;
+
+    color: var(--black);
+
+    font-size: 20px;
+    font-weight: 600;
+
+    line-height: 1.3;
+
+    letter-spacing: -0.4px;
+}
+
+.resume-content p {
+    color: var(--grey);
+
+    font-size: 15px;
+
+    line-height: 1.6;
+}
+
+.degree-name {
+    margin-bottom: 4px;
+}
+
+
+/* =====================================================
+   COMPANY LOGO
+===================================================== */
 
 .company-logo {
     width: 70px;
-
     height: 50px;
 
     flex-shrink: 0;
@@ -701,18 +709,24 @@ img {
     display: flex;
 
     align-items: center;
-
     justify-content: center;
 
     border: 1px solid var(--light-grey);
 
     border-radius: 8px;
 
-    color: var(--grey);
+    overflow: hidden;
 
-    font-size: 9px;
+    background: var(--white);
+}
 
-    letter-spacing: 1px;
+.company-logo img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    padding: 8px;
 }
 
 
@@ -720,14 +734,18 @@ img {
    MOBILE
 ===================================================== */
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
 
     .experience-education {
         padding: 110px 0;
     }
 
+    .experience-education-container {
+        width: 88%;
+    }
+
     .section-label {
-        margin-bottom: 65px;
+        margin-bottom: 60px;
     }
 
     .resume-columns {
@@ -750,12 +768,12 @@ img {
         width: 88%;
     }
 
-    .resume-content h3 {
-        font-size: 19px;
+    .resume-title-row {
+        gap: 18px;
     }
 
-    .resume-title-row {
-        gap: 20px;
+    .resume-content h3 {
+        font-size: 19px;
     }
 
     .company-logo {
