@@ -162,17 +162,17 @@ a {
     letter-spacing: 2px;
 }
 .hero-greeting {
-    margin-bottom: 16px;
+    margin-bottom: 12px;
     color: #ffffff;
     font-size: 30px;
     font-weight: 600;
 }
 
 .hero h1 {
-    max-width: 720px;
-    font-size: clamp(38px, 4.8vw, 62px);
-    line-height: 1.05;
-    letter-spacing: -2px;
+    max-width: 1000px;
+    font-size: clamp(32px, 4vw, 54px);
+    line-height: 1.1;
+    letter-spacing: -1.5px;
 }
 
 .title-nowrap {
