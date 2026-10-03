@@ -10,7 +10,8 @@
     --off-white: #f7f7f7;
     --white: #ffffff;
 
-    --max-width: 1180px;
+    --font-primary: "Space Grotesk", sans-serif;
+    --font-secondary: "Sora", sans-serif;
 }
 
 
@@ -29,7 +30,7 @@ html {
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-primary);
     background: var(--white);
     color: var(--black);
     line-height: 1.6;
