@@ -1481,336 +1481,50 @@ img {
         flex-basis: 160px;
     }
 }
-/* =========================================
-   TOOLS & SKILLS SECTION
-========================================= */
+/* =========================
+   TOOLS & SKILLS
+========================= */
 
 .tools-skills-section {
-    background: #111216;
-    color: #ffffff;
-    padding: 75px 6vw 65px;
-    overflow: hidden;
-}
-
-
-/* =========================================
-   SECTION LABEL
-========================================= */
-
-.tools-label {
-    font-size: 11px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: #929399;
-    margin-bottom: 25px;
-}
-
-
-/* =========================================
-   TOOLS HERO
-========================================= */
-
-.tools-hero {
     position: relative;
-    max-width: 1200px;
-    height: 360px;
-    margin: 0 auto;
+    background: #101116;
+    color: #ffffff;
 }
 
+/* Floating icons */
 
-/* =========================================
-   MAIN HEADING
-========================================= */
-
-.tools-heading {
+.tools-skills-section .floating-tool {
     position: absolute;
-
-    top: 50%;
-    left: 50%;
-
-    transform: translate(-50%, -50%);
-
-    text-align: center;
-
-    width: 600px;
-
-    z-index: 2;
 }
 
-.tools-heading p {
-    font-size: 11px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
+/* Individual positions */
 
-    color: #929399;
-
-    margin: 0 0 18px;
+.tools-skills-section .tool-1 {
+    top: 10%;
+    left: 15%;
 }
 
-.tools-heading h2 {
-    font-size: clamp(42px, 5vw, 68px);
-
-    line-height: 0.98;
-
-    letter-spacing: -3px;
-
-    font-weight: 500;
-
-    margin: 0;
+.tools-skills-section .tool-2 {
+    top: 15%;
+    right: 15%;
 }
 
-
-/* =========================================
-   FLOATING TOOL ICONS
-========================================= */
-
-.floating-tool {
-    position: absolute;
-
-    width: 68px;
-    height: 68px;
-
-    background: #ffffff;
-
-    border-radius: 18px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    box-shadow:
-        0 15px 35px rgba(0, 0, 0, 0.28);
-
-    z-index: 3;
-
-    animation: floatingTool 5s ease-in-out infinite;
-}
-
-
-.floating-tool img {
-    width: 40px;
-    height: 40px;
-
-    object-fit: contain;
-}
-
-
-/* =========================================
-   TOOL POSITIONS
-========================================= */
-
-.tool-1 {
-    top: 15px;
-    left: 8%;
-
-    transform: rotate(-8deg);
-
-    animation-delay: 0s;
-}
-
-
-.tool-2 {
-    top: 25px;
-    right: 20%;
-
-    transform: rotate(7deg);
-
-    animation-delay: 1s;
-}
-
-
-.tool-3 {
-    top: 165px;
-    left: 2%;
-
-    transform: rotate(8deg);
-
-    animation-delay: 2s;
-}
-
-
-.tool-4 {
-    bottom: 15px;
-    right: 8%;
-
-    transform: rotate(-7deg);
-
-    animation-delay: 1.5s;
-}
-
-
-.tool-5 {
-    bottom: 25px;
+.tools-skills-section .tool-3 {
+    bottom: 20%;
     left: 20%;
-
-    transform: rotate(6deg);
-
-    animation-delay: 2.5s;
 }
 
-
-.tool-6 {
-    top: 155px;
-    right: 4%;
-
-    transform: rotate(-8deg);
-
-    animation-delay: 3s;
+.tools-skills-section .tool-4 {
+    bottom: 15%;
+    right: 20%;
 }
 
-
-/* =========================================
-   FLOATING ANIMATION
-========================================= */
-
-@keyframes floatingTool {
-
-    0%,
-    100% {
-        translate: 0 0;
-    }
-
-    50% {
-        translate: 0 -9px;
-    }
-
+.tools-skills-section .tool-5 {
+    top: 40%;
+    left: 5%;
 }
 
-
-/* =========================================
-   SKILLS
-========================================= */
-
-.skills-area {
-    max-width: 1200px;
-
-    margin: 25px auto 0;
-
-    padding-top: 25px;
-
-    border-top: 1px solid rgba(255, 255, 255, 0.14);
-}
-
-
-.skills-title {
-    font-size: 10px;
-
-    letter-spacing: 3px;
-
-    text-transform: uppercase;
-
-    color: #85868b;
-
-    margin-bottom: 16px;
-}
-
-
-.skills-list {
-    display: flex;
-
-    flex-wrap: wrap;
-
-    gap: 9px;
-}
-
-
-.skills-list span {
-    border: 1px solid rgba(255, 255, 255, 0.17);
-
-    padding: 9px 15px;
-
-    border-radius: 50px;
-
-    font-size: 12px;
-
-    color: #d5d5d8;
-
-    transition: all 0.3s ease;
-}
-
-
-.skills-list span:hover {
-    background: #ffffff;
-
-    color: #111216;
-}
-
-
-/* =========================================
-   MOBILE
-========================================= */
-
-@media (max-width: 768px) {
-
-    .tools-skills-section {
-        padding: 60px 24px 50px;
-    }
-
-    .tools-hero {
-        height: 390px;
-    }
-
-    .tools-heading {
-        width: 100%;
-    }
-
-    .tools-heading h2 {
-        font-size: 43px;
-        letter-spacing: -2px;
-    }
-
-    .tools-heading p {
-        font-size: 9px;
-        letter-spacing: 2px;
-    }
-
-    .floating-tool {
-        width: 56px;
-        height: 56px;
-
-        border-radius: 15px;
-    }
-
-    .floating-tool img {
-        width: 32px;
-        height: 32px;
-    }
-
-
-    .tool-1 {
-        top: 15px;
-        left: 3%;
-    }
-
-    .tool-2 {
-        top: 15px;
-        right: 3%;
-    }
-
-    .tool-3 {
-        top: 165px;
-        left: 0;
-    }
-
-    .tool-4 {
-        bottom: 15px;
-        right: 3%;
-    }
-
-    .tool-5 {
-        bottom: 25px;
-        left: 3%;
-    }
-
-    .tool-6 {
-        top: 165px;
-        right: 0;
-    }
-
-
-    .skills-list span {
-        font-size: 11px;
-        padding: 8px 12px;
-    }
-
+.tools-skills-section .tool-6 {
+    top: 40%;
+    right: 5%;
 }
