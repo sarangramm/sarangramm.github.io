@@ -1124,47 +1124,63 @@ a {
     width: 100%;
     padding: 100px 6%;
     background: #f5f5f3;
-    overflow: hidden;
+    box-sizing: border-box;
 }
 
+/* SERVICES TITLE */
+
 .services-header {
-    margin-bottom: 60px;
+    margin-bottom: 70px;
 }
 
 .services-label {
-    font-size: 14px;
-    letter-spacing: 5px;
-    color: #6d7f91;
+    font-size: 42px;
+    font-weight: 500;
+    letter-spacing: 6px;
+    color: #111;
 }
 
-/* Panels */
+/* SERVICE BOXES */
 
 .services-panels {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 12px;
     width: 100%;
     max-width: 1400px;
     margin: 0 auto;
 }
 
+/* Individual boxes */
+
 .service-panel {
-    flex: 1;
-    min-height: 430px;
-    padding: 40px 35px;
+    height: 420px;
+    border-radius: 22px;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
     text-align: center;
-    transition: flex 0.4s ease;
+    padding: 30px;
+
+    box-sizing: border-box;
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
 }
+
+/* Text */
 
 .service-panel h3 {
     margin: 0;
-    font-size: 28px;
-    line-height: 1.1;
+    font-size: 27px;
+    line-height: 1.15;
     font-weight: 500;
 }
 
-/* Panel colours */
+/* Colours */
 
 .service-1 {
     background: #e1e1e1;
@@ -1183,39 +1199,76 @@ a {
 
 .service-4 {
     background: #5278b8;
-    color: white;
+    color: #fff;
 }
 
 .service-5 {
     background: #254aa5;
-    color: white;
+    color: #fff;
 }
 
 .service-6 {
     background: #080a20;
-    color: white;
+    color: #fff;
 }
 
-/* Hover effect */
+/* Hover */
 
 .service-panel:hover {
-    flex: 1.3;
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
 }
 
-/* Mobile */
 
-@media (max-width: 900px) {
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1100px) {
 
     .services-panels {
-        flex-direction: column;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 14px;
     }
 
     .service-panel {
-        min-height: 180px;
+        height: 300px;
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    .services-section {
+        padding: 70px 5%;
+    }
+
+    .services-label {
+        font-size: 32px;
+        letter-spacing: 5px;
+    }
+
+    .services-header {
+        margin-bottom: 40px;
+    }
+
+    .services-panels {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .service-panel {
+        height: 220px;
+        border-radius: 20px;
     }
 
     .service-panel h3 {
-        font-size: 24px;
+        font-size: 25px;
     }
 
 }
