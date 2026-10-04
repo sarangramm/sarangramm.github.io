@@ -494,13 +494,11 @@ a {
     transform: rotate(-7deg);
 }
 
-
 .tools-skills-section .tool-2 {
     top: 12%;
     right: 13%;
     transform: rotate(6deg);
 }
-
 
 .tools-skills-section .tool-3 {
     top: 45%;
@@ -508,13 +506,11 @@ a {
     transform: rotate(8deg);
 }
 
-
 .tools-skills-section .tool-4 {
     bottom: 12%;
     right: 17%;
     transform: rotate(-6deg);
 }
-
 
 .tools-skills-section .tool-5 {
     bottom: 12%;
@@ -522,13 +518,66 @@ a {
     transform: rotate(-5deg);
 }
 
-
 .tools-skills-section .tool-6 {
     top: 43%;
     right: 4%;
     transform: rotate(7deg);
 }
 
+
+/* =========================================================
+   FLOATING ANIMATION
+========================================================= */
+
+.tools-skills-section .floating-tool {
+    animation: floatingTool 4s ease-in-out infinite;
+}
+
+
+/* Different timing for each icon */
+
+.tools-skills-section .tool-1 {
+    animation-delay: 0s;
+}
+
+.tools-skills-section .tool-2 {
+    animation-delay: 0.7s;
+}
+
+.tools-skills-section .tool-3 {
+    animation-delay: 1.4s;
+}
+
+.tools-skills-section .tool-4 {
+    animation-delay: 2.1s;
+}
+
+.tools-skills-section .tool-5 {
+    animation-delay: 2.8s;
+}
+
+.tools-skills-section .tool-6 {
+    animation-delay: 3.5s;
+}
+
+
+/* Floating movement */
+
+@keyframes floatingTool {
+
+    0% {
+        margin-top: 0;
+    }
+
+    50% {
+        margin-top: -14px;
+    }
+
+    100% {
+        margin-top: 0;
+    }
+
+}
 /* =========================
    SKILLS
 ========================= */
