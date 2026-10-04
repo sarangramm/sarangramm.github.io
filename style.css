@@ -1350,12 +1350,12 @@ img {
 
 }
 /* =========================================
-   BRANDS I'VE WORKED WITH
+   BRANDS SECTION
 ========================================= */
 
 .brands-section {
     width: 100%;
-    padding: 90px 0 80px;
+    padding: 90px 0 70px;
     overflow: hidden;
     background: #ffffff;
 }
@@ -1363,15 +1363,15 @@ img {
 .brands-header {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 0 65px 55px;
+    padding: 0 65px 50px;
 }
 
 .brands-header .section-label {
-    margin: 0 0 20px;
+    margin: 0 0 18px;
     font-size: 12px;
     letter-spacing: 0.18em;
     text-transform: uppercase;
-    color: #777777;
+    color: #777;
 }
 
 .brands-header h2 {
@@ -1380,7 +1380,7 @@ img {
     line-height: 0.95;
     font-weight: 500;
     letter-spacing: -0.04em;
-    color: #111111;
+    color: #111;
 }
 
 
@@ -1391,12 +1391,11 @@ img {
 .logo-slider {
     width: 100%;
     overflow: hidden;
-    position: relative;
 
     border-top: 1px solid #e8e8e8;
     border-bottom: 1px solid #e8e8e8;
 
-    padding: 28px 0;
+    padding: 35px 0;
 }
 
 .logo-track {
@@ -1404,30 +1403,30 @@ img {
     align-items: center;
     width: max-content;
 
-    animation: logoScroll 40s linear infinite;
+    animation: logoScroll 35s linear infinite;
 }
 
 
 /* =========================================
-   INDIVIDUAL LOGO
+   LOGO CONTAINER
 ========================================= */
 
 .brand-logo {
-    width: 180px;
-    height: 80px;
+    width: 210px;
+    height: 110px;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    margin: 0 18px;
+    margin: 0 10px;
 
     flex-shrink: 0;
 }
 
 
 /* =========================================
-   LOGO IMAGE
+   LOGOS
 ========================================= */
 
 .brand-logo img {
@@ -1436,43 +1435,106 @@ img {
     width: auto;
     height: auto;
 
-    max-width: 175px;
-    max-height: 70px;
+    max-width: 200px;
+    max-height: 90px;
 
     object-fit: contain;
 }
 
 
 /* =========================================
-   SPECIAL LOGO SIZING
+   INDIVIDUAL LOGO ADJUSTMENTS
 ========================================= */
+
+/* CILA */
+.brand-logo:nth-child(1) img,
+.brand-logo:nth-child(14) img {
+    max-width: 190px;
+    max-height: 85px;
+}
 
 /* CuppaBoba */
 .brand-logo:nth-child(2) img,
 .brand-logo:nth-child(15) img {
-    max-width: 160px;
-    max-height: 70px;
+    max-width: 180px;
+    max-height: 90px;
+}
+
+/* PAS Allied */
+.brand-logo:nth-child(3) img,
+.brand-logo:nth-child(16) img {
+    max-width: 190px;
+    max-height: 90px;
 }
 
 /* Jibin Solar */
 .brand-logo:nth-child(4) img,
 .brand-logo:nth-child(17) img {
-    max-width: 150px;
-    max-height: 65px;
+    max-width: 180px;
+    max-height: 85px;
 }
 
 /* Saaksha */
 .brand-logo:nth-child(5) img,
 .brand-logo:nth-child(18) img {
-    max-width: 190px;
-    max-height: 65px;
+    max-width: 200px;
+    max-height: 85px;
 }
 
 /* Homex */
 .brand-logo:nth-child(6) img,
 .brand-logo:nth-child(19) img {
-    max-width: 170px;
-    max-height: 65px;
+    max-width: 200px;
+    max-height: 85px;
+}
+
+/* Fetal Clinic */
+.brand-logo:nth-child(7) img,
+.brand-logo:nth-child(20) img {
+    max-width: 190px;
+    max-height: 90px;
+}
+
+/* S36 */
+.brand-logo:nth-child(8) img,
+.brand-logo:nth-child(21) img {
+    max-width: 190px;
+    max-height: 90px;
+}
+
+/* DJ Architecture */
+.brand-logo:nth-child(9) img,
+.brand-logo:nth-child(22) img {
+    max-width: 180px;
+    max-height: 90px;
+}
+
+/* Metaframe */
+.brand-logo:nth-child(10) img,
+.brand-logo:nth-child(23) img {
+    max-width: 200px;
+    max-height: 90px;
+}
+
+/* Intellyze */
+.brand-logo:nth-child(11) img,
+.brand-logo:nth-child(24) img {
+    max-width: 200px;
+    max-height: 85px;
+}
+
+/* Miralai */
+.brand-logo:nth-child(12) img,
+.brand-logo:nth-child(25) img {
+    max-width: 200px;
+    max-height: 90px;
+}
+
+/* White Dairy */
+.brand-logo:nth-child(13) img,
+.brand-logo:nth-child(26) img {
+    max-width: 190px;
+    max-height: 90px;
 }
 
 
@@ -1481,19 +1543,17 @@ img {
 ========================================= */
 
 @keyframes logoScroll {
-
-    0% {
+    from {
         transform: translateX(0);
     }
 
-    100% {
+    to {
         transform: translateX(-50%);
     }
-
 }
 
 
-/* Pause on hover */
+/* Pause when mouse is over logos */
 
 .logo-slider:hover .logo-track {
     animation-play-state: paused;
@@ -1519,21 +1579,21 @@ img {
     }
 
     .logo-slider {
-        padding: 22px 0;
-    }
-
-    .logo-track {
-        animation-duration: 32s;
+        padding: 25px 0;
     }
 
     .brand-logo {
-        width: 140px;
-        height: 65px;
-        margin: 0 12px;
+        width: 160px;
+        height: 90px;
+        margin: 0 8px;
     }
 
     .brand-logo img {
-        max-width: 135px;
-        max-height: 55px;
+        max-width: 150px;
+        max-height: 75px;
+    }
+
+    .logo-track {
+        animation-duration: 30s;
     }
 }
