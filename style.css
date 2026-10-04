@@ -358,15 +358,10 @@ a {
 ========================================================= */
 
 .tools-skills-section {
-
     position: relative;
-
     background: #101116;
-
     color: #ffffff;
-
     padding: 60px 6% 80px;
-
     overflow: hidden;
 }
 
@@ -376,15 +371,10 @@ a {
 ========================================================= */
 
 .tools-label {
-
     font-size: 13px;
-
     letter-spacing: 4px;
-
     color: #8993a3;
-
     position: relative;
-
     z-index: 5;
 }
 
@@ -394,15 +384,10 @@ a {
 ========================================================= */
 
 .tools-hero {
-
     position: relative;
-
     width: 100%;
-
     max-width: 1450px;
-
     height: 560px;
-
     margin: 0 auto;
 }
 
@@ -412,22 +397,16 @@ a {
 ========================================================= */
 
 .tools-heading {
-
     position: absolute;
 
     top: 50%;
-
     left: 50%;
 
-    transform: translate(
-        -50%,
-        -50%
-    );
+    transform: translate(-50%, -50%);
 
     text-align: center;
 
     width: 700px;
-
     max-width: 80%;
 
     z-index: 3;
@@ -435,24 +414,15 @@ a {
 
 
 .tools-heading p {
-
     font-size: 12px;
-
     letter-spacing: 4px;
-
     color: #8993a3;
-
     margin-bottom: 28px;
 }
 
 
 .tools-heading h2 {
-
-    font-size: clamp(
-        55px,
-        6vw,
-        88px
-    );
+    font-size: clamp(55px, 6vw, 88px);
 
     line-height: 0.98;
 
@@ -461,6 +431,8 @@ a {
     font-weight: 500;
 
     color: #ffffff;
+
+    margin: 0;
 }
 
 
@@ -469,11 +441,9 @@ a {
 ========================================================= */
 
 .tools-skills-section .floating-tool {
-
     position: absolute;
 
     width: 82px;
-
     height: 82px;
 
     background: #ffffff;
@@ -483,18 +453,14 @@ a {
     display: flex;
 
     align-items: center;
-
     justify-content: center;
 
     padding: 16px;
 
+    box-sizing: border-box;
+
     box-shadow:
-        0 18px 45px rgba(
-            0,
-            0,
-            0,
-            0.35
-        );
+        0 18px 45px rgba(0, 0, 0, 0.35);
 
     z-index: 2;
 
@@ -503,23 +469,18 @@ a {
 }
 
 
-.tools-skills-section
-.floating-tool:hover {
-
-    transform:
-        translateY(-8px)
-        rotate(3deg);
+.tools-skills-section .floating-tool:hover {
+    transform: translateY(-8px) rotate(3deg);
 }
 
 
-.tools-skills-section
-.floating-tool img {
-
+.tools-skills-section .floating-tool img {
     width: 100%;
-
     height: 100%;
 
     object-fit: contain;
+
+    display: block;
 }
 
 
@@ -528,64 +489,45 @@ a {
 ========================================================= */
 
 .tools-skills-section .tool-1 {
-
     top: 9%;
-
     left: 12%;
-
     transform: rotate(-7deg);
 }
 
 
 .tools-skills-section .tool-2 {
-
     top: 12%;
-
     right: 13%;
-
     transform: rotate(6deg);
 }
 
 
 .tools-skills-section .tool-3 {
-
     top: 45%;
-
     left: 4%;
-
     transform: rotate(8deg);
 }
 
 
 .tools-skills-section .tool-4 {
-
     bottom: 12%;
-
     right: 17%;
-
     transform: rotate(-6deg);
 }
 
 
 .tools-skills-section .tool-5 {
-
     bottom: 12%;
-
     left: 20%;
-
     transform: rotate(-5deg);
 }
 
 
 .tools-skills-section .tool-6 {
-
     top: 43%;
-
     right: 4%;
-
     transform: rotate(7deg);
 }
-
 
 /* =========================
    SKILLS
