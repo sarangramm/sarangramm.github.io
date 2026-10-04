@@ -1029,7 +1029,10 @@ a {
 
         padding-top: 28px;
     }
-
+.skills-marquee {
+    width: 100%;
+    overflow: hidden;
+}
 
     .skills-list {
 
