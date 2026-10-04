@@ -587,69 +587,62 @@ a {
 }
 
 
-/* =========================================================
-   SKILLS AREA
-========================================================= */
+/* =========================
+   SKILLS
+========================= */
 
 .skills-area {
-
-    border-top: 1px solid #2b2d32;
-
-    padding-top: 35px;
-
-    max-width: 1450px;
-
-    margin: 0 auto;
+    border-top: 1px solid #2b2d33;
+    padding: 55px 0 70px;
+    overflow: hidden;
 }
-
 
 .skills-title {
-
-    font-size: 12px;
-
-    letter-spacing: 4px;
-
-    color: #8993a3;
-
-    margin-bottom: 25px;
+    font-size: 24px;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: #8fa8c5;
+    margin-bottom: 32px;
 }
 
-
+/* Sliding skills container */
 .skills-list {
-
     display: flex;
-
-    flex-wrap: wrap;
-
-    gap: 12px;
+    gap: 18px;
+    width: max-content;
+    animation: skillsSlide 25s linear infinite;
 }
 
-
+/* Skill pills */
 .skills-list span {
-
-    border: 1px solid #363940;
-
+    flex-shrink: 0;
+    padding: 17px 28px;
+    border: 1px solid #363941;
     border-radius: 50px;
-
-    padding: 13px 20px;
-
-    font-size: 14px;
-
-    color: #e7e7e7;
-
-    transition:
-        background 0.25s ease,
-        border-color 0.25s ease;
+    font-size: 17px;
+    color: #f5f5f5;
+    white-space: nowrap;
+    background: #111217;
+    transition: all 0.3s ease;
 }
 
-
+/* Hover effect */
 .skills-list span:hover {
-
     background: #ffffff;
-
+    color: #111217;
     border-color: #ffffff;
+    transform: scale(1.05);
+}
 
-    color: #111111;
+/* Sliding animation */
+@keyframes skillsSlide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
 }
 
 
