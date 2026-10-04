@@ -1147,23 +1147,20 @@ a {
     grid-template-columns: repeat(6, 1fr);
     gap: 12px;
     width: 100%;
-    max-width: 1400px;
+    max-width: 1150px;
     margin: 0 auto;
 }
 
-/* Individual boxes */
-
 .service-panel {
-    height: 420px;
-    border-radius: 22px;
+    height: 320px;
+    border-radius: 20px;
+    padding: 25px;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
     text-align: center;
-    padding: 30px;
-
     box-sizing: border-box;
 
     transition:
@@ -1171,54 +1168,12 @@ a {
         box-shadow 0.35s ease;
 }
 
-/* Text */
-
 .service-panel h3 {
     margin: 0;
-    font-size: 27px;
+    font-size: 25px;
     line-height: 1.15;
     font-weight: 500;
 }
-
-/* Colours */
-
-.service-1 {
-    background: #e1e1e1;
-    color: #111;
-}
-
-.service-2 {
-    background: #d5dce8;
-    color: #111;
-}
-
-.service-3 {
-    background: #b9c8df;
-    color: #111;
-}
-
-.service-4 {
-    background: #5278b8;
-    color: #fff;
-}
-
-.service-5 {
-    background: #254aa5;
-    color: #fff;
-}
-
-.service-6 {
-    background: #080a20;
-    color: #fff;
-}
-
-/* Hover */
-
-.service-panel:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
-}
-
 
 /* =========================
    TABLET
