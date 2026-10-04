@@ -1227,3 +1227,148 @@ a {
     }
 
 }
+/* =================================
+   SERVICES - FINAL BOX DESIGN
+================================= */
+
+.services-section {
+    width: 100%;
+    padding: 90px 6%;
+    background: #f5f5f3;
+    box-sizing: border-box;
+}
+
+.services-header {
+    margin-bottom: 60px;
+}
+
+.services-label {
+    font-size: 42px;
+    font-weight: 500;
+    letter-spacing: 6px;
+    color: #111;
+}
+
+/* Six separate boxes */
+
+.services-panels {
+    display: grid !important;
+    grid-template-columns: repeat(6, 1fr) !important;
+    gap: 12px !important;
+
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+/* Individual box */
+
+.services-panels .service-panel {
+    display: flex !important;
+
+    width: 100% !important;
+    height: 320px !important;
+
+    align-items: center !important;
+    justify-content: center !important;
+
+    padding: 25px !important;
+    box-sizing: border-box;
+
+    border-radius: 20px !important;
+
+    text-align: center;
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+/* Service text */
+
+.services-panels .service-panel h3 {
+    margin: 0 !important;
+
+    font-size: 25px !important;
+    line-height: 1.15 !important;
+    font-weight: 500 !important;
+}
+
+/* BOX COLOURS */
+
+.services-panels .service-1 {
+    background: #e1e1e1 !important;
+    color: #111 !important;
+}
+
+.services-panels .service-2 {
+    background: #d5dce8 !important;
+    color: #111 !important;
+}
+
+.services-panels .service-3 {
+    background: #b9c8df !important;
+    color: #111 !important;
+}
+
+.services-panels .service-4 {
+    background: #5278b8 !important;
+    color: #fff !important;
+}
+
+.services-panels .service-5 {
+    background: #254aa5 !important;
+    color: #fff !important;
+}
+
+.services-panels .service-6 {
+    background: #080a20 !important;
+    color: #fff !important;
+}
+
+/* Hover */
+
+.services-panels .service-panel:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =================================
+   TABLET
+================================= */
+
+@media (max-width: 1100px) {
+
+    .services-panels {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+
+    .services-panels .service-panel {
+        height: 280px !important;
+    }
+}
+
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 700px) {
+
+    .services-section {
+        padding: 70px 5%;
+    }
+
+    .services-label {
+        font-size: 32px;
+    }
+
+    .services-panels {
+        grid-template-columns: 1fr !important;
+    }
+
+    .services-panels .service-panel {
+        height: 210px !important;
+    }
+
+}
